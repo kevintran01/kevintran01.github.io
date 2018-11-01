@@ -1,8 +1,8 @@
-$(document).ready(function () {
-        $('#hide').click(function() {
-            $('#project1').show();
-        });
-        $('#show').click(function() {
-            $('#project1').hide();
-        });
+$(document).ready(function() {
+    $('#button-popup').click(function() {
+        $(".window-popup").show(300);
+    });
+    $("#button-popup-close").click(function () {
+      $(".window-popup").hide(300);
+    });
 });
