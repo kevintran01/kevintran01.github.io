@@ -2,3 +2,30 @@
     width: 30%;
     height: 30%;
 }
+#title {
+    text-align: center;
+}
+#main {
+    font-size: 25px;
+}
+#img-div {
+    text-align: center;
+    background-color: white;
+    padding-top: 40px;
+    /*border-radius: 50%;*/
+}
+img {
+    border-radius: 20%;
+}
+#tribute-info {
+    text-align: center;
+}
+/*#factsAbout {*/
+    /*margin-left: 25%;*/
+/*}*/
+/*#tribute-link {*/
+    /*margin-left: 40%;*/
+/*}*/
+body {
+    background-color: #EFDECD;
+}
