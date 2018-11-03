@@ -15,13 +15,26 @@ body {
     text-align: center;
     padding: 9px;
 }
+#allProjects li {
+    margin: 20px;
+}
 .button-popup {
     margin: 20px;
     background: darkorange;
     padding: 15px;
 }
 
-.window-popup {
+#window-popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    display: none;
+}
+#window-popup1 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,14 +54,13 @@ body {
     left: 30%;
     top: 25%;
 }
-
-    .wp-content a {
-        padding: 10px;
-        background: #3498db;
-        color: white;
-        text-decoration: none;
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        border-radius: 5px;
-    }
+.button-popup-close {
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+}

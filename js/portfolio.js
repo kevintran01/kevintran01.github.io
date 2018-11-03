@@ -1,9 +1,15 @@
 $(document).ready(function() {
-    $('#button-popup').click(function() {
-        $(".window-popup").show(300);
+    $('#button-popup1').click(function() {
+        $("#window-popup1").show(300);
     });
-    $("#button-popup-close").click(function () {
-      $(".window-popup").hide(300);
+    $(".button-popup-close").click(function () {
+      $("#window-popup1").hide(300);
+    });
+    $('#button-popup').click(function() {
+        $("#window-popup").show(300);
+    });
+    $(".button-popup-close").click(function () {
+        $("#window-popup").hide(300);
     });
 });
 
