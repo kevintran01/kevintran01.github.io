@@ -5,6 +5,11 @@ body {
 .nav-link {
     color: darkorange;
 }
+#about {
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 55px;
+}
 
 .tab-pane {
     color: white;
