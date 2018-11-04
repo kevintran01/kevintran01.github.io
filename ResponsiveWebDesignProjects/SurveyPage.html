@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Survey Page</title>
+    <link rel="stylesheet" type="text/css" href="css/surveyPage.css">
 </head>
 <body>
-
+<h1 id="title">Evaluation of my Job</h1>
+<h5 id="description">Creating great paths and opportunities for our partners!</h5>
+<hr>
+<form id="survey-form">
+    <h4 id="name">Please enter your name</h4>
+    <input for="name" type="text" id="name-label" placeholder="John Smith">
+    <h4 id="email">Please enter your email</h4>
+    <input for="email" type="email" id="email-label" placeholder="John@Doe.com">
+    <h4 id="number">Please enter your telephone number</h4>
+    <input for="number" type="number" min="10" max="15" id="number-label" placeholder="(555)555-5555">
+<h4>1. Which department do you work in?</h4>
+<input type="text">
+<hr>
+<h4>2. Which Position Do You Hold?</h4>
+<input type="text">
+<hr>
+<h4>3. Please indicate the job category for this position</h4>
+<input value="administration" type="radio">Administration
+<input value="technical" type="radio">Technical
+<input value="management" type="radio">Management
+<input value="financial" type="radio">Financial
+<input value="projectManagement" type="radio">Project Management
+<input value="other" type="radio">Other (please specify):
+<input type="text">
+<h5>How long have you worked at our company?</h5>
+    <select id="dropdown">
+        <option value="lessHalfYear">Less Than Half A Year</option>
+        <option value="betweenHalfYearAndYear">Between Half a Year and a Year</option>
+        <option value="between1And2Years">Between 1 and 2 Years</option>
+        <option value="between2And3Years">Between 2 and 3 Years</option>
+        <option value="between3And5Years">Between 3 and 5 Years</option>
+        <option value="5YearsOrMore">5 Years or More</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="comment">Enter Additional Work Experience Here...</textarea>
+    <br>
+    <input id="submit" type="submit" value="Finish Survey">
+</form>
 </body>
 </html>

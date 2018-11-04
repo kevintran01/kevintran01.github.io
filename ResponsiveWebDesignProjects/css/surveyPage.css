@@ -1,0 +1,10 @@
+body {
+    color: black;
+background-color: #d7bcef;
+    font-family: Verdana;
+    text-align: center;
+}
+#description {
+    font-style: italic;
+    color: #4c4c4c;
+}
