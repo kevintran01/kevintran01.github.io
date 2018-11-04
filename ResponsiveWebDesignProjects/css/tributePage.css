@@ -6,7 +6,7 @@
     text-align: center;
 }
 #main {
-    font-size: 25px;
+    font-size: 1.2em;
 }
 #img-div {
     text-align: center;
@@ -17,15 +17,13 @@
 img {
     border-radius: 20%;
 }
-#tribute-info {
+#factsAbout {
     text-align: center;
 }
-/*#factsAbout {*/
-    /*margin-left: 25%;*/
-/*}*/
-/*#tribute-link {*/
-    /*margin-left: 40%;*/
-/*}*/
 body {
     background-color: #EFDECD;
+    font-family: "Verdana";
+}
+li {
+    padding: 3px;
 }
