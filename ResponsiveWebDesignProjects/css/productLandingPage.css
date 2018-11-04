@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana;
+    background-color: #fcf9ed;
+}
+section {
+    font-size: 1.2em;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+#nav-bar {
+    float: right;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.nav-link {
+    display: flex;
+    justify-content: space-around;
+}
+@media (hover: hover) {
+header:hover {
+ background: lightgrey;
+}
+}
+@media (hover: hover) {
+    #form:hover {
+        background: palegoldenrod;
+    }
+}
+#motivationVideo {
+    display: block;
+    margin: 0 auto;
+}
+#form {
+    text-align: center;
+}
