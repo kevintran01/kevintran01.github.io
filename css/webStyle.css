@@ -12,7 +12,7 @@ body {
 
 #allProjects {
     list-style-type: none;
-    text-align: center;
+    /*text-align: center;*/
     padding: 9px;
 }
 #allProjects li {
@@ -22,6 +22,10 @@ body {
     margin: 20px;
     background: darkorange;
     padding: 15px;
+    margin-left: 200px;
+    margin-top: -15px;
+    /*float: right;*/
+
 }
 
 #window-popup {

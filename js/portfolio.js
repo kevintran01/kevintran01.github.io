@@ -17,6 +17,12 @@ $(document).ready(function() {
     $(".button-popup-close").click(function () {
         $("#window-popup2").hide(300);
     });
+    $('#button-popup3').click(function() {
+        $("#window-popup3").show(300);
+    });
+    $(".button-popup-close").click(function () {
+        $("#window-popup3").hide(300);
+    });
 });
 
 
