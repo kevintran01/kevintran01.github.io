@@ -8,14 +8,14 @@
 <body>
 <nav id="navbar">
     <header>
-        <ul id="sideNavbar">
-            <li class="sideNavbar"><a class="nav-link" href="#cssIntroduction">CSS Introduction</a></li>
-            <li class="sideNavbar"><a class="nav-link" href="#cssSyntax">CSS Syntax</a></li>
-            <li class="sideNavbar"><a class="nav-link" href="#howTo">CSS How To</a></li>
-            <li class="sideNavbar"><a class="nav-link" href="#cssColors">CSS Colors</a></li>
-            <li class="sideNavbar"><a class="nav-link" href="#cssBackgrounds">CSS Backgrounds</a></li>
-            <li class="sideNavbar"><a class="nav-link" href="#cssBorders">CSS Borders</a></li>
-        </ul>
+        <div id="sideNavbar">
+            <a class="nav-link" href="#cssIntroduction">CSS Introduction</a>
+            <a class="nav-link" href="#cssSyntax">CSS Syntax</a>
+            <a class="nav-link" href="#howTo">CSS How To</a>
+            <a class="nav-link" href="#cssColors">CSS Colors</a>
+            <a class="nav-link" href="#cssBackgrounds">CSS Backgrounds</a>
+            <a class="nav-link" href="#cssBorders">CSS Borders</a>
+        </div>
     </header>
 </nav>
 <main id="main-doc">
@@ -599,27 +599,27 @@
             <p>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</p>
             <p>Experiment by mixing the RGB values below:</p>
             <div style="background-color: tomato; color: white">rgb(255, 99, 71)</div>
-            <!--<section id="rgbSlider">-->
-                <!--<fieldset>-->
-                    <!--<label for="r">R</label>-->
-                    <!--<input type="range" min="0" max="255" id="r" step="1" value="0">-->
-                    <!--<output for="r" id="r_out">0</output>-->
-                <!--</fieldset>-->
+            <section id="rgbSlider">
+                <fieldset>
+                    <label for="r">R</label>
+                    <input type="range" min="0" max="255" id="r" step="1" value="0">
+                    <output for="r" id="r_out">0</output>
+                </fieldset>
 
-                <!--<fieldset>-->
-                    <!--<label for="g">G</label>-->
-                    <!--<input type="range" min="0" max="255" id="g" step="1" value="0">-->
-                    <!--<output for="g" id="g_out">0</output>-->
-                <!--</fieldset>-->
+                <fieldset>
+                    <label for="g">G</label>
+                    <input type="range" min="0" max="255" id="g" step="1" value="0">
+                    <output for="g" id="g_out">0</output>
+                </fieldset>
 
-                <!--<fieldset>-->
-                    <!--<label for="b">B</label>-->
-                    <!--<input type="range" min="0" max="255" id="b" step="1" value="0">-->
-                    <!--<output for="b" id="b_out">0</output>-->
-                <!--</fieldset>-->
+                <fieldset>
+                    <label for="b">B</label>
+                    <input type="range" min="0" max="255" id="b" step="1" value="0">
+                    <output for="b" id="b_out">0</output>
+                </fieldset>
 
-                <!--<output id="hex">#000000</output>-->
-            <!--</section>-->
+                <output id="hex">#000000</output>
+            </section>
             <div class="codeExample">
                 <h3>Example</h3>
                 <table>
@@ -1632,58 +1632,58 @@
 
     </section>
 </main>
-<!--<script>-->
-    <!--var body = document.rgbSlider,-->
-        <!--r = document.querySelector('#r'),-->
-        <!--g = document.querySelector('#g'),-->
-        <!--b = document.querySelector('#b'),-->
-        <!--r_out = document.querySelector('#r_out'),-->
-        <!--g_out = document.querySelector('#g_out'),-->
-        <!--b_out = document.querySelector('#b_out'),-->
-        <!--hex_out = document.querySelector('#hex');-->
+<script>
+    var body = document.rgbSlider,
+        r = document.querySelector('#r'),
+        g = document.querySelector('#g'),
+        b = document.querySelector('#b'),
+        r_out = document.querySelector('#r_out'),
+        g_out = document.querySelector('#g_out'),
+        b_out = document.querySelector('#b_out'),
+        hex_out = document.querySelector('#hex');
 
-    <!--function setColor() {-->
-        <!--var r_hex = parseInt(r.value, 10).toString(16),-->
-            <!--g_hex = parseInt(g.value, 10).toString(16),-->
-            <!--b_hex = parseInt(b.value, 10).toString(16),-->
-            <!--hex = "#" + pad(r_hex) + pad(g_hex) + pad(b_hex);-->
-        <!--rgbSlider.style.backgroundColor = hex;-->
-        <!--hex_out.value = hex;-->
-    <!--}-->
+    function setColor() {
+        var r_hex = parseInt(r.value, 10).toString(16),
+            g_hex = parseInt(g.value, 10).toString(16),
+            b_hex = parseInt(b.value, 10).toString(16),
+            hex = "#" + pad(r_hex) + pad(g_hex) + pad(b_hex);
+        rgbSlider.style.backgroundColor = hex;
+        hex_out.value = hex;
+    }
 
-    <!--function pad(n) {-->
-        <!--return (n.length < 2) ? "0" + n : n;-->
-    <!--}-->
+    function pad(n) {
+        return (n.length < 2) ? "0" + n : n;
+    }
 
-    <!--r.addEventListener('change', function () {-->
-        <!--setColor();-->
-        <!--r_out.value = r.value;-->
-    <!--}, false);-->
+    r.addEventListener('change', function () {
+        setColor();
+        r_out.value = r.value;
+    }, false);
 
-    <!--r.addEventListener('input', function () {-->
-        <!--setColor();-->
-        <!--r_out.value = r.value;-->
-    <!--}, false);-->
+    r.addEventListener('input', function () {
+        setColor();
+        r_out.value = r.value;
+    }, false);
 
-    <!--g.addEventListener('change', function () {-->
-        <!--setColor();-->
-        <!--g_out.value = g.value;-->
-    <!--}, false);-->
+    g.addEventListener('change', function () {
+        setColor();
+        g_out.value = g.value;
+    }, false);
 
-    <!--g.addEventListener('input', function () {-->
-        <!--setColor();-->
-        <!--g_out.value = g.value;-->
-    <!--}, false);-->
+    g.addEventListener('input', function () {
+        setColor();
+        g_out.value = g.value;
+    }, false);
 
-    <!--b.addEventListener('change', function () {-->
-        <!--setColor();-->
-        <!--b_out.value = b.value;-->
-    <!--}, false);-->
+    b.addEventListener('change', function () {
+        setColor();
+        b_out.value = b.value;
+    }, false);
 
-    <!--b.addEventListener('input', function () {-->
-        <!--setColor();-->
-        <!--b_out.value = b.value;-->
-    <!--}, false);-->
-<!--</script>-->
+    b.addEventListener('input', function () {
+        setColor();
+        b_out.value = b.value;
+    }, false);
+</script>
 </body>
 </html>

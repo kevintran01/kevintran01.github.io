@@ -2,32 +2,38 @@
 body {
     font-family: Verdana;
     background-color: #F5F5F5;
-    margin: 0;
 }
 #sideNavbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
     height: 100%;
-    /*overflow: auto;*/
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
-.sideNavbar a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
+#sideNavbar a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-}
-.sideNavbar a.active {
-    background-color: #4CAF50;
-    color: white;
+    color: #818181;
+    display: block;
 }
 
-.sideNavbar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+#sideNavbar a:hover {
+    color: #f1f1f1;
+}
+
+#main-doc {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding-left: 40px;
+    padding-right: 150px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 #rgbSlider{
     background-color: rgb(0,0,0);
