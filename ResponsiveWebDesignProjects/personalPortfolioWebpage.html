@@ -5,6 +5,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/personalPortfolioPage.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="topHeader">
@@ -12,14 +13,15 @@
     <h1 id="headerText">Hi there, I'am Kevin.</h1>
     <p id="headerText1">a professional web developer</p>
 </div>
-
-<ul id="nav-bar">
-    <li class="navBarLists"><a href="#aboutMe">About Me</a></li>
-    <li class="navBarLists"><a href="#news">Technical Skills</a></li>
-    <li class="navBarLists"><a href="#contact">Work</a></li>
-    <li class="navBarLists" style="float: right"><a class="active" href="#">Contact Me</a></li>
-</ul>
-</nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#aboutMe">About Me</a>
+        <a href="#news">Technical Skills</a>
+        <a href="#contact">Work</a>
+        <a class="active" href="#">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div
 <section id="missionStatement">
     <article>
         <div id="steveJobQuoteBox">
@@ -77,5 +79,15 @@
 <section id="profile-link">
 
 </section>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 </body>
 </html>
