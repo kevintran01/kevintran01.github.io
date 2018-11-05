@@ -1,10 +1,10 @@
 body {
-    font-size: 28px;
     font-family: 'Open Sans', sans-serif;
-    background-color: lightslategrey;
+    background-image: linear-gradient(lightslategrey, #343003);
 }
 
-ul {
+#nav-bar {
+    font-size: 1.3em;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -13,12 +13,18 @@ ul {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 1;
+    border-radius: 4px;
 }
 
-li {
+.navBarLists {
     float: left;
 }
-
+#headImg {
+    width: 22%;
+    height: 22%;
+    border-radius: 50%;
+}
 li a {
     display: block;
     color: white;
@@ -27,7 +33,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navBarLists a:hover {
     background-color: #111;
 }
 
@@ -39,6 +45,7 @@ li a:hover {
     text-align: center;
 }
 #headerText {
+    font-size: 3.4em;
     color: white;
     position: absolute;
     top: 45%;
@@ -51,8 +58,38 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: lightgreen;
-    font-size: 1.5em;
+    font-size: 2.7em;
 }
 #imgTopHeader {
  opacity: 0.35;
+}
+#steveJobQuote {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 15px solid yellow;
+    background-color: #efece7;
+    border-radius: 20px;
+}
+#quoteMark {
+    position: absolute;
+    top: -35px;
+    right: 730px;
+    opacity: 0.2;
+    -ms-transform: rotate(358deg);
+    -webkit-transform: rotate(358deg);
+    transform: rotate(358deg);
+}
+#steveJobImg {
+    position: absolute;
+    width: 450px;
+    height: 311px;
+    bottom: 0px;
+    left: 550px;
+    opacity: 0.3;
 }
