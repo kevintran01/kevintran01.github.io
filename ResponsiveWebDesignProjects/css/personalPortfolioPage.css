@@ -101,11 +101,11 @@ body {
 }
 
 #steveJobImg {
-    position: absolute;
-    width: 450px;
-    height: 311px;
+    /*position: absolute;*/
+    width: 30%;
+    height: auto;
     bottom: 0px;
-    left: 550px;
+    /*left: 550px;*/
     opacity: 0.3;
 }
 
@@ -114,6 +114,13 @@ body {
 @media (min-width: 400px) {
     h1#headerText {
         font-size: 10px;
+    }
+    div#steveJobQuoteBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    div#steveJobQuote {
+        font-size: 17px;
     }
     p#headerText1 {
         font-size: 10px;
