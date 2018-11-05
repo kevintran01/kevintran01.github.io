@@ -1,4 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
 body {
     font-family: Verdana;
     background-color: #F5F5F5;
+    margin: 0;
 }
+#sideNavbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    /*overflow: auto;*/
+}
+.sideNavbar a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.sideNavbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sideNavbar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+#rgbSlider{
+    background-color: rgb(0,0,0);
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+fieldset{
+    border: none;
+}
+output{
+    display: inline-block;
+    min-width: 2.5em;
+}
+label, output{
+    padding: 2px 9px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1.1em;
+}
+label[for=r], output[for=r]{
+    background-color: #f00;
+}
+label[for=g], output[for=g]{
+    background-color: #0f0;
+}
+label[for=b], output[for=b]{
+    background-color: #00f;
+}
+#hex {
+    min-width: 4.5em;
+    font-size: 3em;
+    background: rgba(255, 255, 255, .3);
+}
+.colorBoxExamples {
+    padding: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.codeExample {
+    padding: 8px;
+    background-color: ghostwhite;
+    border: 2px solid greenyellow;
+    border-left: 5px solid green;
+}
+.note {
+    padding: 10px;
+    background-color: #fff980;
+    border-left: 5px solid #cabb0c;
+}
+h3 {
+    font-size: 1.7em;
+}
+

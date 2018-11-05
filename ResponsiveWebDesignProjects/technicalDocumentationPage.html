@@ -8,9 +8,14 @@
 <body>
 <nav id="navbar">
     <header>
-        <a class="nav-link" href="#cssIntroduction">CSS Introduction</a>
-        <a class="nav-link" href="#cssSyntax">CSS Syntax</a>
-        <a class="nav-link" href="#howTo">CSS How To</a>
+        <ul id="sideNavbar">
+            <li class="sideNavbar"><a class="nav-link" href="#cssIntroduction">CSS Introduction</a></li>
+            <li class="sideNavbar"><a class="nav-link" href="#cssSyntax">CSS Syntax</a></li>
+            <li class="sideNavbar"><a class="nav-link" href="#howTo">CSS How To</a></li>
+            <li class="sideNavbar"><a class="nav-link" href="#cssColors">CSS Colors</a></li>
+            <li class="sideNavbar"><a class="nav-link" href="#cssBackgrounds">CSS Backgrounds</a></li>
+            <li class="sideNavbar"><a class="nav-link" href="#cssBorders">CSS Borders</a></li>
+        </ul>
     </header>
 </nav>
 <main id="main-doc">
@@ -18,29 +23,38 @@
     <section class="main-section" id="cssIntroduction">
         <article>
             <h3>CSS Introduction</h3>
-            <li>CSS is a language that describes the style of an HTML document.</li>
-            <li>CSS describes how HTML elements should be displayed.</li>
-            <li>CSS stands for Cascading Style Sheets</li>
-            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-            <li>External stylesheets are stored in CSS files</li>
+            <hr>
+            <ul>
+                <li>CSS is a language that describes the style of an HTML document.</li>
+                <li>CSS describes how HTML elements should be displayed.</li>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Why Use CSS?</h3>
             <p>CSS is used to define styles for your web pages, including the design, layout and variations in
                 display for different devices and screen sizes. </p>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>CSS Solved a Big Problem</h3>
             <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
             <p>HTML was created to describe the content of a web page, like:</p>
             <p>&lt;h1>This is a heading&lt;/h1></p>
-            <p>&lt;p>This is a paragraph.</p>
+            <p>&lt;p>This is a paragraph.&lt;/p></p>
             <p>When tags like &lt;font>, and color attributes were added to the HTML 3.2 specification, it started a
                 nightmare for web developers. Development of large websites, where fonts and color information were
                 added to every single page, became a long and expensive process.</p>
             <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
             <p>CSS removed the style formatting from the HTML page!</p>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>CSS Saves a Lot of Work!</h3>
             <p>The style definitions are normally saved in external .css files.</p>
@@ -48,10 +62,12 @@
                 file!</p>
         </article>
     </section>
+    <hr>
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssSyntax">
         <article>
             <h2>CSS Syntax and Selectors</h2>
+            <hr>
             <h3>CSS Syntax</h3>
             <p>A CSS rule-set consists of a selector and a declaration block:</p>
             <img src="images/CSS_syntax.gif" height="119px" width="569px">
@@ -61,33 +77,45 @@
             <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly
                 braces.</p>
             <p>In the following example all &lt;p> elements will be center-aligned, with a red text color:</p>
-            <h3>Example</h3>
-            <code>p {
-                <br>
-                color: red;
-                <br>
-                text-align: center;
-                <br>
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>p {
+                    <br>
+                    color: red;
+                    <br>
+                    text-align: center;
+                    <br>
+                    }
+                </code>
+            </div>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>CSS Selectors</h3>
             <p>CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class,
                 attribute, and more.</p>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>The element Selector</h3>
             <p>The element selector selects elements based on the element name.</p>
             <p>You can select all &lt;p> elements on a page like this (in this case, all &lt;p> elements will be
                 center-aligned, with a red text color):</p>
-            <h3>Example</h3>
-            <code>p {
-                <br>
-                text-align: center;
-                <br>
-                color: red;
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>p {
+                    <br>
+                    text-align: center;
+                    <br>
+                    color: red;
+                    }
+                </code>
+            </div>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>The id Selector</h3>
             <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
@@ -96,178 +124,235 @@
             <p>To select an element with a specific id, write a hash (#) character, followed by the id of the
                 element.</p>
             <p>The style rule below will be applied to the HTML element with id="para1":</p>
-            <h3>Example</h3>
-            <code>#para1 {
-                <br>
-                text-align: center;
-                <br>
-                color: red;
-                <br>
-                }</code>
-            <p>Note: An id name cannot start with a number!</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>#para1 {
+                    <br>
+                    text-align: center;
+                    <br>
+                    color: red;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p class="note">Note: An id name cannot start with a number!</p>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>The class Selector</h3>
             <p>The class selector selects elements with a specific class attribute.</p>
-
             <p>To select elements with a specific class, write a period (.) character, followed by the name of the
                 class.</p>
             <p>In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
-            <h3>Example</h3>
-            <code>.center {
-                <br>
-                text-align: center;
-                <br>
-                color: red;
-                <br>
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>.center {
+                    <br>
+                    text-align: center;
+                    <br>
+                    color: red;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>You can also specify that only specific HTML elements should be affected by a class.</p>
             <p>In the example below, only &lt;p> elements with class="center" will be center-aligned:</p>
-            <h3>Example</h3>
-            <code>p.center {
-                <br>
-                text-align: center;
-                <br>
-                color: red;
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>p.center {
+                    <br>
+                    text-align: center;
+                    <br>
+                    color: red;
+                    }
+                </code>
+            </div>
             <p>HTML elements can also refer to more than one class.</p>
             <p>In the example below, the &lt;p> element will be styled according to class="center" and to
                 class="large":</p>
-            <h3>Example</h3>
-            <p class="center large">This paragraph refers to two classes.</p>
-            <p>Note: A class name cannot start with a number!</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;p class="center large">This paragraph refers to two classes.&lt;/p>
+                </code>
+            </div>
+            <p class="note">Note: A class name cannot start with a number!</p>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
-            <h3>Grouping Selectors</h3><code></code>
+            <h3>Grouping Selectors</h3>
             <p>If you have elements with the same style definitions, like this:</p>
-            <code>h1 {
+            <code>
+                h1 {
                 <br>
                 text-align: center;
                 <br>
                 color: red;
                 <br>
-                }</code>
-            <code>h2 {
+                }
+            </code>
+            <br>
+            <code>
+                h2 {
                 text-align: center;
                 <br>
                 color: red;
                 <br>
-                }</code>
-            <code>p {
+                }
+            </code>
+            <br>
+            <code>
+                p {
                 <br>
                 text-align: center;
                 <br>
                 color: red;
                 <br>
-                }</code>
+                }
+            </code>
             <p>It will be better to group the selectors, to minimize the code.</p>
             <p>To group selectors, separate each selector with a comma.</p>
             <p>In the example below we have grouped the selectors from the code above:</p>
-            <h3>Example</h3>
-            <code>h1, h2, p {
-                <br>
-                text-align: center;
-                <br>
-                color: red;
-                <br>
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    h1, h2, p {
+                    <br>
+                    text-align: center;
+                    <br>
+                    color: red;
+                    <br>
+                    }
+                </code>
+            </div>
         </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>CSS Comments</h3>
             <p>Comments are used to explain the code, and may help when you edit the source code at a later
                 date.</p>
             <p>Comments are ignored by browsers.</p>
             <p>A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</p>
-            <h3>Example</h3>
-            <code>p {
-                <br>
-                color: red;
-                <br>
-                /* This is a single-line comment */
-                <br>
-                text-align: center;
-                <br>
-                }</code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p {
+                    <br>
+                    color: red;
+                    <br>
+                    /* This is a single-line comment */
+                    <br>
+                    text-align: center;
+                    <br>
+                    }
+                </code>
+            </div>
             <br>
-            /* This is
-            a multi-line
-            comment */
+            <p>/* This is a multi-line comment */</p>
         </article>
     </section>
+    <hr>
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="howTo">
         <article>
             <h3>CSS How To...</h3>
+            <hr>
             <p>When a browser reads a style sheet, it will format the HTML document according to the information in the
                 style sheet.</p>
-            <p>Three Ways to Insert CSS</p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Three Ways to Insert CSS</h3>
             <p>There are three ways of inserting a style sheet:</p>
-            <ul>External style sheet</ul>
-            <ul>Internal style sheet</ul>
-            <ul>Inline style</ul>
+            <ul style="border: 2px solid lawngreen; border-left: 5px solid green">
+                <li>External style sheet</li>
+                <li>Internal style sheet</li>
+                <li>Inline style</li>
+            </ul>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
             <h3>External Style Sheet</h3>
             <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
             <p>Each page must include a reference to the external style sheet file inside the <&lt;link> element. The <&lt;link>
-                element goes inside the <&lt;head> section:&lt;/head>
-            <h3>Example</h3>
-            <code>
-                <&lt;head>
-                <br>
-                &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
-                <&lt;/head>
-            </code>
+                element goes inside the <&lt;head> section:&lt;/head> section:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    <&lt;head>
+                    <br>
+                    &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
+                    <&lt;/head>
+                </code>
+            </div>
             <p>An external style sheet can be written in any text editor. The file should not contain any html tags. The
                 style sheet file must be saved with a .css extension.</p>
             <p>Here is how the "mystyle.css" looks:</p>
-            <code>
-                body {
-                <br>
-                background-color: lightblue;
-                <br>
-                }
-                <br>
-                h1 {
-                <br>
-                color: navy;
-                <br>
-                margin-left: 20px;
-                <br>
-                }
-            </code>
-            <p>Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The
-                correct way is: margin-left: 20px;</p>
+            <div class="codeExample">
+                <code>
+                    body {
+                    <br>
+                    background-color: lightblue;
+                    <br>
+                    }
+                    <br>
+                    h1 {
+                    <br>
+                    color: navy;
+                    <br>
+                    margin-left: 20px;
+                    <br>
+                    }
+                </code>
+            </div>
+            <p style="border-left: 5px solid red; background-color: #ffdddd; padding: 30px">Note: Do not add a space
+                between the property value and the unit (such as
+                <mark>margin-left: 20 px;</mark>
+                ). The
+                correct way is:
+                <mark>margin-left: 20px;</mark>
+            </p>
         </article>
+        <hr>
         <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Internal Style Sheet</h3>
             <p>An internal style sheet may be used if one single page has a unique style.</p>
             <p>Internal styles are defined within the &lt;style> element, inside the <&lt;head> section of an HTML
                 page:</p>
-            <h3>Example</h3>
-            &lt;head>
-            <br>
-            &lt;style>
-            <br>
-            <code>
-                body {
-                <br>
-                background-color: linen;
-                <br>
-                }
-                <br>
-                h1 {
-                <br>
-                color: maroon;
-                <br>
-                margin-left: 40px;
-                <br>
-                }
-                <br>
-                &lt;/style>
-                <br>
-                &lt;/head>
-            </code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;head>
+                    <br>
+                    &lt;style>
+                    <br>
+                        body {
+                        <br>
+                        background-color: linen;
+                        <br>
+                        }
+                        <br>
+                        h1 {
+                        <br>
+                        color: maroon;
+                        <br>
+                        margin-left: 40px;
+                        <br>
+                        }
+                        <br>
+                    &lt;/style>
+                    <br>
+                    &lt;/head>
+                </code>
+            </div>
         </article>
+        <hr>
         <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Inline Styles</h3>
@@ -275,11 +360,17 @@
             <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain
                 any CSS property.</p>
             <p>The example below shows how to change the color and the left margin of a element:</p>
-            <h3>Example</h3>
-            <code>&lt;h1 style="color:blue;margin-left:30px;">This is a heading&lt;/h1></code>
-            <p>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation).
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;h1 style="color:blue;margin-left:30px;">This is a heading&lt;/h1>
+                </code>
+            </div>
+            <p class="note">Tip: An inline style loses many of the advantages of a style sheet (by mixing content with
+                presentation).
                 Use this method sparingly.</p>
         </article>
+        <hr>
         <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Multiple Style Sheets</h3>
@@ -287,83 +378,1312 @@
                 from the last read style sheet will be used.</p>
             <h3>Example</h3>
             <p>Assume that an external style sheet has the following style for the element:</p>
-            <code>
-                h1 {
-                <br>
-                color: navy;
-                <br>
-                }
-            </code>
+            <div class="codeExample">
+                <code>
+                    h1 {
+                    <br>
+                    color: navy;
+                    <br>
+                    }
+                </code>
+            </div>
             <p>then, assume that an internal style sheet also has the following style for the element:</p>
-            <code>
-                h1 {
-                <br>
-                color: orange;
-                <br>
-                }
-            </code>
+            <div class="codeExample">
+                <code>
+                    h1 {
+                    <br>
+                    color: orange;
+                    <br>
+                    }
+                </code>
+            </div>
             <br>
-            <p>If the internal style is defined after the link to the external style sheet, the elements will be
+            <p>If the internal style is defined after the link to the external style sheet, the &lt;/h1> elements will
+                be
                 "orange":</p>
-            <h3>Example</h3>
-            <code>&lt;head>
-                <br>
-                &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
-                <br>
-                &lt;style>
-                <br>
-                h1 {
-                <br>
-                color: orange;
-                <br>
-                }
-                <br>
-                &lt;/style>
-                <br>
-                &lt;/head>
-            </code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>&lt;head>
+                    <br>
+                    &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
+                    <br>
+                    &lt;style>
+                    <br>
+                    h1 {
+                    <br>
+                    color: orange;
+                    <br>
+                    }
+                    <br>
+                    &lt;/style>
+                    <br>
+                    &lt;/head>
+                </code>
+            </div>
             <p>However, if the internal style is defined before the link to the external style sheet, the elements will
                 be "navy":</p>
-            <h3>Example</h3>
-            <code>&lt;head>
-                <br>
-                &lt;style>
-                <br>
-                h1 {
-                <br>
-                color: orange;
-                <br>
-                }
-                <br>
-                &lt;/style>
-                <br>
-                &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
-                <br>
-                &lt;/head>
-            </code>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>&lt;head>
+                    <br>
+                    &lt;style>
+                    <br>
+                    h1 {
+                    <br>
+                    color: orange;
+                    <br>
+                    }
+                    <br>
+                    &lt;/style>
+                    <br>
+                    &lt;link rel="stylesheet" type="text/css" href="mystyle.css">
+                    <br>
+                    &lt;/head>
+                </code>
+            </div>
         </article>
+        <hr>
         <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Cascading Order</h3>
             <p>What style will be used when there is more than one style specified for an HTML element?</p>
             <p>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where
                 number one has the highest priority:</p>
-            <ul>Inline style (inside an HTML element)</ul>
-            <ul>External and internal style sheets (in the head section)</ul>
-            <ul>Browser default</ul>
+            <ol>
+                <li>Inline style (inside an HTML element)</li>
+                <li>External and internal style sheets (in the head section)</li>
+                <li>Browser default</li>
+            </ol>
             <p>So, an inline style has the highest priority, and will override external and internal styles and browser
                 defaults.</p>
         </article>
+    </section>
+    <hr>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <section class="main-section" id="cssColors">
+        <article>
+            <h3>CSS Colors</h3>
+            <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+        </article>
+        <hr>
         <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Color Names</h3>
+            <hr>
+            <p>In HTML, a color can be specified by using a color name:</p>
+            <table>
+                <tr>
+                    <td class="colorBoxExamples" style="background-color: tomato">Tomato</td>
+                    <td class="colorBoxExamples" style="background-color: orange">Orange</td>
+                    <td class="colorBoxExamples" style="background-color: dodgerblue">DodgerBlue</td>
+                    <td class="colorBoxExamples" style="background-color: mediumseagreen">MediumSeaGreen</td>
+                    <td class="colorBoxExamples" style="background-color: gray">Gray</td>
+                    <td class="colorBoxExamples" style="background-color: slateblue">SlateBlue</td>
+                    <td class="colorBoxExamples" style="background-color: violet">Violet</td>
+                    <td class="colorBoxExamples" style="background-color: lightblue">LightGray</td>
+                </tr>
+            </table>
+            <p>HTML supports <u>140 standard color names.</u></p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Color</h3>
+            <p>You can set the background color for HTML elements:</p>
+            <div style="background-color: blue; color:white">Hello World</div>
+            <br>
+            <div style="background-color: tomato; color:white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat.
+            </div>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;h1 style="background-color:DodgerBlue;">Hello World&lt;/h1>
+                    <br>
+                    &lt;p style="background-color:Tomato;">Lorem ipsum...&lt;/p>
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Text Color</h3>
+            <p>You can set the color of text:</p>
+            <h3 style="color:tomato">Hello World</h3>
+            <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;h1 style="color:Tomato;">Hello World&lt;/h1>
+                    <br>
+                    &lt;p style="color:DodgerBlue;">Lorem ipsum...&lt;/p>
+                    <br>
+                    &lt;p style="color:MediumSeaGreen;">Ut wisi enim...&lt;/p>
+                    <br>
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Border Color</h3>
+            <p>You can set the color of borders:</p>
+            <h4 style="border:2px solid tomato">Hello World</h4>
+            <h4 style="border:2px solid dodgerblue">Hello World</h4>
+            <h4 style="border:2px solid violet">Hello World</h4>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;h1 style="border:2px solid Tomato;">Hello World&lt;/h1>
+                    <br>
+                    &lt;h1 style="border:2px solid DodgerBlue;">Hello World&lt;/h1>
+                    <br>
+                    &lt;h1 style="border:2px solid Violet;">Hello World&lt;/h1>
+                    <br>
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Color Values</h3>
+            <p>In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA
+                values:</p>
+            <p>Same as color name "Tomato":</p>
+            <div>
+                <div class="colorBoxExamples" style="background-color: rgb(255, 99, 71)">rgb(255, 99, 71)</div>
+                <br>
+                <div class="colorBoxExamples" style="background-color: #ff6347">#ff6347</div>
+                <br>
+                <div class="colorBoxExamples" style="background-color: hsl(9, 100%, 64%)">hsl(9, 100%, 64%)</div>
+            </div>
+            <p>Same as color name "Tomato", but 50% transparent:</p>
+            <div>
+                <div class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.5)">rgba(255, 99, 71, 0.5)
+                </div>
+                <br>
+                <div class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.5)">hsla(9, 100%, 64%,
+                    0.5)
+                </div>
+            </div>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    &lt;h1 style="background-color:rgb(255, 99, 71);">...&lt;/h1>
+                    <br>
+                    &lt;h1 style="background-color:#ff6347;">...&lt;/h1>
+                    <br>
+                    &lt;h1 style="background-color:hsl(9, 100%, 64%);">...&lt;/h1>
+                    <br>
+                    &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);">...&lt;/h1>
+                    <br>
+                    &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...&lt;/h1>
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>RGB Value</h3>
+            <p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+            <h3><code><strong>rgb(<i>red, green, blue</i>)</strong></code></h3>
+            <p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+            <p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the
+                others are set to 0.</p>
+            <p>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</p>
+            <p>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</p>
+            <p>Experiment by mixing the RGB values below:</p>
+            <div style="background-color: tomato; color: white">rgb(255, 99, 71)</div>
+            <!--<section id="rgbSlider">-->
+                <!--<fieldset>-->
+                    <!--<label for="r">R</label>-->
+                    <!--<input type="range" min="0" max="255" id="r" step="1" value="0">-->
+                    <!--<output for="r" id="r_out">0</output>-->
+                <!--</fieldset>-->
+
+                <!--<fieldset>-->
+                    <!--<label for="g">G</label>-->
+                    <!--<input type="range" min="0" max="255" id="g" step="1" value="0">-->
+                    <!--<output for="g" id="g_out">0</output>-->
+                <!--</fieldset>-->
+
+                <!--<fieldset>-->
+                    <!--<label for="b">B</label>-->
+                    <!--<input type="range" min="0" max="255" id="b" step="1" value="0">-->
+                    <!--<output for="b" id="b_out">0</output>-->
+                <!--</fieldset>-->
+
+                <!--<output id="hex">#000000</output>-->
+            <!--</section>-->
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 0, 0); color:white">rgb(255, 0, 0)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(0, 0, 255); color:white">rgb(0, 0, 255)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(60, 179, 113); color:white">rgb(60, 179,
+                            113)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(238, 130, 238); color:white">rgb(238, 130,
+                            238)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 165, 0); color:white">rgb(255, 165,
+                            0)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(106, 90, 205); color:white">rgb(106, 90,
+                            205)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+            <div code="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples"
+                            style="background-color: rgb(0, 0, 0); color: white">rgb(0, 0, 0)</td>
+                        <td class="colorBoxExamples" style="background-color: rgb(60, 60, 60); color: white">rgb(60, 60,
+                            60)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(120, 120, 120); color: white">rgb(120,
+                            120, 120)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(180, 180, 180); color: white">rgb(180,
+                            180, 180)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(240, 240, 240); color: darkgray">rgb(240,
+                            240, 240)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 255, 255); color: darkgray">rgb(255,
+                            255, 255)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>HEX Value</h3>
+            <p>In HTML, a color can be specified using a hexadecimal value in the form:</p>
+            <h3><code><strong><i>#rrggbb</i></strong></code></h3>
+            <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal
+                0-255).</p>
+            <p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are
+                set to the lowest value (00).</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: #ff0000">#ff0000</td>
+                        <td class="colorBoxExamples" style="background-color: #0000ff">#0000ff</td>
+                        <td class="colorBoxExamples" style="background-color: #3cb371">#3cb371</td>
+                        <td class="colorBoxExamples" style="background-color: #ee82ee">#ee82ee</td>
+                        <td class="colorBoxExamples" style="background-color: #ffa500">#ffa500</td>
+                        <td class="colorBoxExamples" style="background-color: #6a5acd">#6a5acd</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: #000000; color: white">#000000</td>
+                        <td class="colorBoxExamples" style="background-color: #3c3c3c; color: white">#3c3c3c</td>
+                        <td class="colorBoxExamples" style="background-color: #787878">#787878</td>
+                        <td class="colorBoxExamples" style="background-color: #b4b4b4">#b4b4b4</td>
+                        <td class="colorBoxExamples" style="background-color: #f0f0f0">#f0f0f0</td>
+                        <td class="colorBoxExamples" style="background-color: #ffffff">#ffffff</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>HSL Value</h3>
+            <p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+            <h3><code><strong>hsl(<i>hue, saturation, lightness</i>)</strong></code></h3>
+            <p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+            <p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p>
+            <p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</td>
+                        <td class="colorBoxExamples"
+                            style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</td>
+                        <td class="colorBoxExamples"
+                            style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</td>
+                        <td class="colorBoxExamples"
+                            style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</td>
+                        <td class="colorBoxExamples"
+                            style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</td>
+                        <td class="colorBoxExamples"
+                            style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</td>
+                    </tr>
+                </table>
+        </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Saturation</h3>
+            <p>Saturation can be describe as the intensity of a color.</p>
+            <p>100% is pure color, no shades of gray</p>
+            <p>50% is 50% gray, but you can still see the color.</p>
+            <p>0% is completely gray, you can no longer see the color.</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 60%, 50%)">hsl(0, 60%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 40%, 50%)">hsl(0, 40%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 20%, 50%)">hsl(0, 20%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Lightness</h3>
+            <p>The lightness of a color can be described as how much light you want to give the color, where 0% means no
+                light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p>
+            <div class="code">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 0%); color: white">hsl(0, 100%,
+                            0%)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 25%); color: white">hsl(0, 100%,
+                            25%)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 75%)">hsl(0, 100%, 75%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 90%)">hsl(0, 100%, 90%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 100%)">hsl(0, 100%, 100%)</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0%
+                to 100% to get darker/lighter shades:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 0%); color: white">hsl(0, 0%, 0%)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 24%); color: white">hsl(0, 0%,
+                            24%)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 47%)">hsl(0, 0%, 47%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 71%)">hsl(0, 0%, 71%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 94%)">hsl(0, 0%, 94%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 100%)">hsl(0, 0%, 100%)</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>RGBA Value</h3>
+            <p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the
+                opacity for a color.</p>
+            <p>An RGBA color value is specified with:</p>
+            <h3><code><strong>rgba(<i>red, green, blue, alpha</i>)</strong></code></h3>
+            <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0); color: darkgray">
+                            rgba(255, 99, 71, 0)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.2); color: darkgray">
+                            rgba(255, 99, 71, 0.2)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.4); color: white">
+                            rgba(255, 99, 71, 0.4)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.6); color: white">
+                            rgba(255, 99, 71, 0.6)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.8); color: white">
+                            rgba(255, 99, 71, 0.8)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 1); color: white">rgba(255,
+                            99, 71, 1)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>HSLA Value</h3>
+            <p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the
+                opacity for a color.</p>
+            <p>An HSLA color value is specified with:</p>
+            <h3><code><strong>hsla(<i>hue, saturation, lightness, alpha</i>)</strong></code></h3>
+            <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <table>
+                    <tr>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0); color: darkgray">
+                            hsla(9, 100%, 64%, 0)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.2); color: darkgray">
+                            hsla(9, 100%, 64%, 0.2)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.4); color: white">hsla(9,
+                            100%, 64%, 0.4)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.6); color: white">hsla(9,
+                            100%, 64%, 0.6)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.8); color: white">hsla(9,
+                            100%, 64%, 0.8)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 1); color: white">hsla(9,
+                            100%, 64%, 1)
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
     </section>
-    <section class="main-section">
+    <hr>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <section class="main-section" id="cssBackgrounds">
+        <article>
+            <h3>CSS Backgrounds</h3>
+            <p>The CSS background properties are used to define the background effects for elements.</p>
+            <p>CSS background properties:</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ul>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Color</h3>
+            <p>The
+                <mark>background-color</mark>
+                property specifies the background color of an element.
+            </p>
+            <p>The background color of a page is set like this:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>body {
+                    <br>
+                background-color: lightblue;
+                    <br>
+                }
+                </code>
+            </div>
+            <p>With CSS, a color is most often specified by:</p>
+            <ul>
+                <li>a valid color name - like "red"</li>
+                <li>a HEX value - like "#ff0000"</li>
+                <li>an RGB value - like "rgb(255,0,0)"</li>
+            </ul>
+            <p>Look at <u>CSS Color Values</u> for a complete list of possible color values.</p>
+            <p>In the example below, the &lt;h1>, &lt;p>, and &lt;div> elements have different background colors:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>h1 {
+                    <br>
+                background-color: green;
+                    <br>
+                }
+                    <br>
+                div {
+                    <br>
+                background-color: lightblue;
+                    <br>
+                }
+                    <br>
+                p {
+                    <br>
+                background-color: yellow;
+                    <br>
+                }
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Image</h3>
+            <p>The
+                <mark>background-image</mark>
+                property specifies an image to use as the background of an element.
+            </p>
+            <p>By default, the image is repeated so it covers the entire element.</p>
+            <p>The background image for a page can be set like this:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("paper.gif");
+                    <br>
+                }
+                </code>
+            </div>
+            <p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is hardly readable:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("bgdesert.jpg");
+                    <br>
+                }
+                </code>
+            </div>
+            <p class="note">Note: When using a background image, use an image that does not disturb the text.</p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Image - Repeat Horizontally or Vertically</h3>
+            <p>By default, the
+                <mark>background-image</mark>
+                property repeats an image both horizontally and vertically.
+            </p>
+            <p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("gradient_bg.png");
+                    <br>
+                }
+                </code>
+            </div>
+            <p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look
+                better:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("gradient_bg.png");
+                    <br>
+                background-repeat: repeat-x;
+                    <br>
+                }
+                </code>
+            </div>
+            <p class="note">Tip: To repeat an image vertically, set <mark>background-repeat: repeat-y;</mark></p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Image - Set position and no-repeat</h3>
+            <p>Showing the background image only once is also specified by the <mark>background-repeat property:</mark></p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("img_tree.png");
+                    <br>
+                background-repeat: no-repeat;
+                    <br>
+                }
+                </code>
+            </div>
+            <p>In the example above, the background image is shown in the same place as the text. We want to change the
+                position of the image, so that it does not disturb the text too much.</p>
+            <p>The position of the image is specified by the <mark>background-position property:</mark></p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("img_tree.png");
+                    <br>
+                background-repeat: no-repeat;
+                    <br>
+                background-position: right top;
+                    <br>
+                }
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background Image - Fixed position</h3>
+            <p>To specify that the background image should be fixed (will not scroll with the rest of the page), use the
+                <mark>background-attachment property:</mark></p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background-image: url("img_tree.png");
+                    <br>
+                background-repeat: no-repeat;
+                    <br>
+                background-position: right top;
+                    <br>
+                background-attachment: fixed;
+                    <br>
+                }
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Background - Shorthand property</h3>
+            <p>To shorten the code, it is also possible to specify all the background properties in one single property.
+                This is called a shorthand property.</p>
+            <p>The shorthand property for background is <mark>background:</mark></p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    body {
+                    <br>
+                background: #ffffff url("img_tree.png") no-repeat right top;
+                    <br>
+                }
+                </code>
+            </div>
+            <p>When using the shorthand property the order of the property values is:</p>
+            <ul>
+                <li>
+                    <mark>background-color</mark>
+                </li>
+                <li>
+                    <mark>background-image</mark>
+                </li>
+                <li>
+                    <mark>background-repeat</mark>
+                </li>
+                <li>
+                    <mark>background-attachment</mark>
+                </li>
+                <li>
+                    <mark>background-position</mark>
+                </li>
+            </ul>
+            <p>It does not matter if one of the property values is missing, as long as the other ones are in this
+                order.</p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>All CSS Background Properties</h3>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><u>background</u></td>
+                    <td>Sets all the background properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>background-attachment</u></td>
+                    <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+                <tr>
+                    <td><u>background-clip</u></td>
+                    <td>Specifies the painting area of the background</td>
+                </tr>
+                <tr>
+                    <td><u>background-color</u></td>
+                    <td>Sets the background color of an element</td>
+                </tr>
+                <tr>
+                    <td><u>background-image</u></td>
+                    <td>Sets the background image for an element</td>
+                </tr>
+                <tr>
+                    <td><u>background-origin</u></td>
+                    <td>Specifies where the background image(s) is/are positioned</td>
+                </tr>
+                <tr>
+                    <td><u>background-position</u></td>
+                    <td>Sets the starting position of a background image</td>
+                </tr>
+                <tr>
+                    <td><u>background-repeat</u></td>
+                    <td>Sets how a background image will be repeated</td>
+                </tr>
+                <tr>
+                    <td><u>background-size</u></td>
+                    <td>Specifies the size of the background image(s)</td>
+                </tr>
+            </table>
+        </article>
     </section>
-    <section class="main-section">
+    <hr>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <section class="main-section" id="cssBorders">
+        <article>
+            <h3>CSS Borders</h3>
+            <hr>
+            <h3>CSS Border Properties</h3>
+            <p>The CSS
+                <mark>border</mark>
+                properties allow you to specify the style, width, and color of an element's border.
+            </p>
+            <p style="border: solid black 1px; padding: 10px">I have borders on all sides.</p>
+            <p style="border-bottom: solid red 1px; padding: 10px">I have a red bottom border.</p>
+            <p style="border: solid darkgray 1px; border-radius: 10px; padding: 10px">I have rounded borders.</p>
+            <p style="border-left: 6px solid dodgerblue; background-color: lightblue; padding: 10px">I have a blue left
+                border.</p>
+            <h3>Border Style</h3>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <p>The
+                <mark>border-style</mark>
+                property specifies what kind of border to display.
+            </p>
+
+            <p>The following values are allowed:</p>
+            <ul>
+                <li>
+                    <mark>dotted</mark>
+                    - Defines a dotted border
+                </li>
+                <br>
+                <li>
+                    <mark>dashed</mark>
+                    - Defines a dashed border
+                </li>
+                <br>
+                <li>
+                    <mark>solid</mark>
+                    - Defines a solid border
+                </li>
+                <br>
+                <li>
+                    <mark>double</mark>
+                    - Defines a double border
+                </li>
+                <br>
+                <li>
+                    <mark>groove</mark>
+                    - Defines a 3D grooved border. The effect depends on the border-color value
+                </li>
+                <br>
+                <li>
+                    <mark>ridge</mark>
+                    - Defines a 3D ridged border. The effect depends on the border-color value
+                </li>
+                <br>
+                <li>
+                    <mark>inset</mark>
+                    - Defines a 3D inset border. The effect depends on the border-color value
+                </li>
+                <br>
+                <li>
+                    <mark>outset</mark>
+                    - Defines a 3D outset border. The effect depends on the border-color value
+                </li>
+                <br>
+                <li>
+                    <mark>none</mark>
+                    - Defines no border
+                </li>
+                <br>
+                <li>
+                    <mark>hidden</mark>
+                    - Defines a hidden border
+                </li>
+                <br>
+                <p>The
+                    <mark>border-style</mark>
+                    property can have from one to four values (for the top border, right border, bottom border,
+                    and the left border).
+                </p>
+            </ul>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p.dotted {border-style: dotted;}<br>
+                    p.dashed {border-style: dashed;}<br>
+                    p.solid {border-style: solid;}<br>
+                    p.double {border-style: double;}<br>
+                    p.groove {border-style: groove;}<br>
+                    p.ridge {border-style: ridge;}<br>
+                    p.inset {border-style: inset;}<br>
+                    p.outset {border-style: outset;}<br>
+                    p.none {border-style: none;}<br>
+                    p.hidden {border-style: hidden;}<br>
+                    p.mix {border-style: dotted dashed solid double;}
+                </code>
+                <p>Result:</p>
+                <span>
+                    <p style="border: 3px dotted black; padding: 3px">A dotted border.</p>
+                    <p style="border: 3px dashed black; padding: 3px">A dashed border.</p>
+                    <p style="border: 3px solid black; padding: 3px">A solid border.</p>
+                    <p style="border: 3px double black; padding: 3px">A double border.</p>
+                    <p style="border: 10px groove lightgray; padding: 3px">A groove border. The effect depends on the border-color value.</p>
+                    <p style="border: 10px ridge lightgray; padding: 3px">A ridge border. The effect depends on the border-color value.</p>
+                    <p style="border: 10px inset lightgray; padding: 3px">An inset border. The effect depends on the border-color value.</p>
+                    <p style="border: 10px outset lightgray; padding: 3px">An outset border. The effect depends on the border-color value.</p>
+                    <p style="border: none; padding: 3px">No border.</p>
+                    <p style="border: 10px hidden lightgray; padding: 3px">A hidden border.</p>
+                    <p style="border-style: dotted dashed solid double; padding: 3px">A mixed border.</p>
+                </span>
+            </div>
+            <p class="note">Note: None of the OTHER CSS border properties described below will have ANY effect unless the
+                border-style property is set!</p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Border Width</h3>
+            <p>The
+                <mark>border-width</mark>
+                property specifies the width of the four borders.
+            </p>
+            <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined
+                values: thin, medium, or thick.</p>
+            <p>The
+                <mark>border-width</mark>
+                property can have from one to four values (for the top border, right border, bottom border, and the left
+                border).
+            </p>
+            <p style="border: 5px solid black; padding: 7px">5px border-width</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>p.one {<br>
+                border-style: solid;<br>
+                border-width: 5px;<br>
+                }<br>
+
+                p.two {<br>
+                border-style: solid;<br>
+                border-width: medium;<br>
+                }<br>
+
+                p.three {<br>
+                border-style: solid;<br>
+                border-width: 2px 10px 4px 20px;<br>
+                    }</code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Border Color</h3>
+            <p>The
+                <mark>border-color</mark>
+                property is used to set the color of the four borders.
+            </p>
+            <p>The color can be set by:</p>
+            <ul>
+                <li>name - specify a color name, like "red"</li>
+                <li>Hex - specify a hex value, like "#ff0000"</li>
+                <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+                <li>transparent</li>
+            </ul>
+            <p>The
+                <mark>border-color</mark>
+                property can have from one to four values (for the top border, right border, bottom border, and the left
+                border).
+            </p>
+            <p>If
+                <mark>border-color</mark>
+                is not set, it inherits the color of the element.
+            </p>
+            <p style="border: 5px solid red; padding: 7px">Red border</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p.one {
+                    <br>
+                border-style: solid;
+                    <br>
+                border-color: red;
+                    <br>
+                }
+                <br>
+                p.two {
+                    <br>
+                border-style: solid;
+                    <br>
+                border-color: green;
+                    <br>
+                }
+                <br>
+                p.three {
+                    <br>
+                border-style: solid;
+                    <br>
+                border-color: red green blue yellow;
+                    <br>
+                    }
+                </code>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Border - Individual Sides</h3>
+            <p>From the examples above you have seen that it is possible to specify a different border for each
+                side.</p>
+            <p>In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+            <p style="border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid; padding: 7px">
+                Different Border Styles</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p {
+                    <br>
+                border-top-style: dotted;
+                    <br>
+                border-right-style: solid;
+                    <br>
+                border-bottom-style: dotted;
+                    <br>
+                border-left-style: solid;
+                    <br>
+                }
+                    <br>
+                </code>
+            </div>
+            <p>The example above gives the same result as this:</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p {
+                    <br>
+                border-style: dotted solid;
+                    <br>
+                }
+                </code>
+            </div>
+            <p>So, here is how it works:</p>
+            <p>If the
+                <mark>border-style</mark>
+                property has four values:
+            </p>
+            <ul>
+                <li><strong>border-style: dotted solid double dashed;</strong></li>
+                <li style="list-style-type: circle">top border is dotted</li>
+                <li style="list-style-type: circle">right border is solid</li>
+                <li style="list-style-type: circle">bottom border is double</li>
+                <li style="list-style-type: circle">left border is dashed</li>
+            </ul>
+            <p>If the
+                <mark>border-style</mark>
+                property has three values:
+            </p>
+            <ul>
+                <li><strong>border-style: dotted solid double;</strong></li>
+                <li style="list-style-type: circle">top border is dotted</li>
+                <li style="list-style-type: circle">right and left borders are solid</li>
+                <li style="list-style-type: circle">bottom border is double</li>
+            </ul>
+            <p>If the
+                <mark>border-style</mark>
+                property has two values:
+            </p>
+            <ul>
+                <li><strong>border-style: dotted solid;</strong></li>
+                <li style="list-style-type: circle">top and bottom borders are dotted</li>
+                <li style="list-style-type: circle">right and left borders are solid</li>
+            </ul>
+            <p>If the
+                <mark>border-style</mark>
+                property has one value:
+            </p>
+            <ul>
+                <li><strong>border-style: dotted;</strong></li>
+                <li style="list-style-type: circle">all four borders are dotted</li>
+            </ul>
+            <p>The
+                <mark>border-style</mark>
+                property is used in the example above. However, it also works with
+                <mark>border-width</mark>
+                and
+                <mark>border-color.</mark>
+            </p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Border - Shorthand Property</h3>
+            <p>As you can see from the examples above, there are many properties to consider when dealing with
+                borders.</p>
+            <p>To shorten the code, it is also possible to specify all the individual border properties in one
+                property.</p>
+            <p>The
+                <mark>border</mark>
+                property is a shorthand property for the following individual border properties:
+            </p>
+            <ul>
+                <li>
+                    <mark>border-width</mark>
+                </li>
+                <li>
+                    <mark>border-style</mark>
+                    (required)
+                </li>
+                <li>
+                    <mark>border-color</mark>
+                </li>
+            </ul>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p {
+                    <br>
+                border: 5px solid red;
+                    <br>
+                }
+                    <br>
+                </code>
+                <p>Result:</p>
+                <p style="border: 4px solid red; padding: 5px">Some text</p>
+            </div>
+            <p>You can also specify all the individual border properties for just one side:</p>
+            <div class="codeExample">
+                <h3>Left Border</h3>
+                <code>
+                    p {
+                    <br>
+                border-left: 6px solid red;
+                    <br>
+                background-color: lightgrey;
+                    <br>
+                }
+                </code>
+                <p>Result:</p>
+                <p style="border-left: 6px solid red; background-color: lightgray">Some text</p>
+            </div>
+            <br>
+            <div class="codeExample">
+                <h3>Bottom Border</h3>
+                <code>
+                    p {
+                    <br>
+                border-bottom: 6px solid red;
+                    <br>
+                background-color: lightgrey;
+                    <br>
+                }
+                </code>
+                <p>Result:</p>
+                <p style="border-bottom: 6px solid red; background-color: lightgray">Some text</p>
+            </div>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>Rounded Borders</h3>
+            <p>The
+                <mark>border-radius</mark>
+                property is used to add rounded borders to an element:
+            </p>
+            <p style="border: 2px solid red; border-radius: 0px">Normal border</p>
+            <p style="border: 2px solid red; border-radius: 3px">Round border</p>
+            <p style="border: 2px solid red; border-radius: 7px">Rounder border</p>
+            <p style="border: 2px solid red; border-radius: 50px">Roundest border</p>
+            <div class="codeExample">
+                <h3>Example</h3>
+                <code>
+                    p {
+                    <br>
+                border: 2px solid red;
+                    <br>
+                border-radius: 5px;
+                    <br>
+                }
+                </code>
+            </div>
+            <p>Note: The
+                <mark>border-radius</mark>
+                property is not supported in IE8 and earlier versions.
+            </p>
+        </article>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------------->
+        <article>
+            <h3>All CSS Border Properties</h3>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><u>border</u></td>
+                    <td>Sets all the border properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>border-bottom</u></td>
+                    <td>Sets all the bottom border properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>border-bottom-color</u></td>
+                    <td>Sets the color of the bottom border</td>
+                </tr>
+                <tr>
+                    <td><u>border-bottom-style</u></td>
+                    <td>Sets the style of the bottom border</td>
+                </tr>
+                <tr>
+                    <td><u>border-bottom-width</u></td>
+                    <td>Sets the width of the bottom border</td>
+                </tr>
+                <tr>
+                    <td><u>border-color</u></td>
+                    <td>Sets the color of the four borders</td>
+                </tr>
+                <tr>
+                    <td><u>border-left</u></td>
+                    <td>Sets all the left border properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>border-left-color</u></td>
+                    <td>Sets the color of the left border</td>
+                </tr>
+                <tr>
+                    <td><u>border-left-style</u></td>
+                    <td>Sets the style of the left border</td>
+                </tr>
+                <tr>
+                    <td><u>border-left-width</u></td>
+                    <td>Sets the width of the left border</td>
+                </tr>
+                <tr>
+                    <td><u>border-radius</u></td>
+                    <td>Sets all the four border-*-radius properties for rounded corners</td>
+                </tr>
+                <tr>
+                    <td><u>border-right</u></td>
+                    <td>Sets all the right border properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>border-right-color</u></td>
+                    <td>Sets the color of the right border</td>
+                </tr>
+                <tr>
+                    <td><u>border-right-style</u></td>
+                    <td>Sets the style of the right border</td>
+                </tr>
+                <tr>
+                    <td><u>border-right-width</u></td>
+                    <td>Sets the width of the right border</td>
+                </tr>
+                <tr>
+                    <td><u>border-style</u></td>
+                    <td>Sets the style of the four borders</td>
+                </tr>
+                <tr>
+                    <td><u>border-top</u></td>
+                    <td>Sets all the top border properties in one declaration</td>
+                </tr>
+                <tr>
+                    <td><u>border-top-color</u></td>
+                    <td>Sets the color of the top border</td>
+                </tr>
+                <tr>
+                    <td><u>border-top-style</u></td>
+                    <td>Sets the style of the top border</td>
+                </tr>
+                <tr>
+                    <td><u>border-top-width</u></td>
+                    <td>Sets the width of the top border</td>
+                </tr>
+                <tr>
+                    <td><u>border-width</u></td>
+                    <td>Sets the width of the four borders</td>
+                </tr>
+            </table>
+        </article>
     </section>
+    <hr>
+    <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section">
-    </section>
-    <section class="main-section">
+
     </section>
 </main>
+<!--<script>-->
+    <!--var body = document.rgbSlider,-->
+        <!--r = document.querySelector('#r'),-->
+        <!--g = document.querySelector('#g'),-->
+        <!--b = document.querySelector('#b'),-->
+        <!--r_out = document.querySelector('#r_out'),-->
+        <!--g_out = document.querySelector('#g_out'),-->
+        <!--b_out = document.querySelector('#b_out'),-->
+        <!--hex_out = document.querySelector('#hex');-->
+
+    <!--function setColor() {-->
+        <!--var r_hex = parseInt(r.value, 10).toString(16),-->
+            <!--g_hex = parseInt(g.value, 10).toString(16),-->
+            <!--b_hex = parseInt(b.value, 10).toString(16),-->
+            <!--hex = "#" + pad(r_hex) + pad(g_hex) + pad(b_hex);-->
+        <!--rgbSlider.style.backgroundColor = hex;-->
+        <!--hex_out.value = hex;-->
+    <!--}-->
+
+    <!--function pad(n) {-->
+        <!--return (n.length < 2) ? "0" + n : n;-->
+    <!--}-->
+
+    <!--r.addEventListener('change', function () {-->
+        <!--setColor();-->
+        <!--r_out.value = r.value;-->
+    <!--}, false);-->
+
+    <!--r.addEventListener('input', function () {-->
+        <!--setColor();-->
+        <!--r_out.value = r.value;-->
+    <!--}, false);-->
+
+    <!--g.addEventListener('change', function () {-->
+        <!--setColor();-->
+        <!--g_out.value = g.value;-->
+    <!--}, false);-->
+
+    <!--g.addEventListener('input', function () {-->
+        <!--setColor();-->
+        <!--g_out.value = g.value;-->
+    <!--}, false);-->
+
+    <!--b.addEventListener('change', function () {-->
+        <!--setColor();-->
+        <!--b_out.value = b.value;-->
+    <!--}, false);-->
+
+    <!--b.addEventListener('input', function () {-->
+        <!--setColor();-->
+        <!--b_out.value = b.value;-->
+    <!--}, false);-->
+<!--</script>-->
 </body>
 </html>
