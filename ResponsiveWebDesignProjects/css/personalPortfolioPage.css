@@ -1,6 +1,7 @@
 body {
     font-size: 28px;
     font-family: 'Open Sans', sans-serif;
+    background-color: lightslategrey;
 }
 
 ul {
@@ -34,10 +35,11 @@ li a:hover {
     background-color: #4CAF50;
 }
 #topHeader {
-    background-color: #bfcae1;
+    background-color: black;
     text-align: center;
 }
 #headerText {
+    color: white;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -48,7 +50,8 @@ li a:hover {
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: darkgreen;
+    color: lightgreen;
+    font-size: 1.5em;
 }
 #imgTopHeader {
  opacity: 0.35;
