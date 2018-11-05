@@ -9,6 +9,7 @@
 <nav id="navbar">
     <header>
         <div id="sideNavbar">
+            <a class="nav-link"><strong>CSS Tutorial</strong></a>
             <a class="nav-link" href="#cssIntroduction">CSS Introduction</a>
             <a class="nav-link" href="#cssSyntax">CSS Syntax</a>
             <a class="nav-link" href="#howTo">CSS How To</a>
@@ -22,7 +23,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssIntroduction">
         <article>
-            <h3>CSS Introduction</h3>
+            <header>
+                <h3>CSS Introduction</h3>
+            </header>
             <hr>
             <ul>
                 <li>CSS is a language that describes the style of an HTML document.</li>
@@ -66,7 +69,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssSyntax">
         <article>
-            <h2>CSS Syntax and Selectors</h2>
+            <header>
+                <h2>CSS Syntax and Selectors</h2>
+            </header>
             <hr>
             <h3>CSS Syntax</h3>
             <p>A CSS rule-set consists of a selector and a declaration block:</p>
@@ -258,7 +263,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="howTo">
         <article>
-            <h3>CSS How To...</h3>
+            <header>
+                <h3>CSS How To...</h3>
+            </header>
             <hr>
             <p>When a browser reads a style sheet, it will format the HTML document according to the information in the
                 style sheet.</p>
@@ -332,20 +339,20 @@
                     <br>
                     &lt;style>
                     <br>
-                        body {
-                        <br>
-                        background-color: linen;
-                        <br>
-                        }
-                        <br>
-                        h1 {
-                        <br>
-                        color: maroon;
-                        <br>
-                        margin-left: 40px;
-                        <br>
-                        }
-                        <br>
+                    body {
+                    <br>
+                    background-color: linen;
+                    <br>
+                    }
+                    <br>
+                    h1 {
+                    <br>
+                    color: maroon;
+                    <br>
+                    margin-left: 40px;
+                    <br>
+                    }
+                    <br>
                     &lt;/style>
                     <br>
                     &lt;/head>
@@ -462,7 +469,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssColors">
         <article>
-            <h3>CSS Colors</h3>
+            <header>
+                <h3>CSS Colors</h3>
+            </header>
             <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
         </article>
         <hr>
@@ -624,20 +633,26 @@
                 <h3>Example</h3>
                 <table>
                     <tr>
-                        <td class="colorBoxExamples" style="background-color: rgb(255, 0, 0); color:white">rgb(255, 0, 0)
-                        </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(0, 0, 255); color:white">rgb(0, 0, 255)
-                        </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(60, 179, 113); color:white">rgb(60, 179,
-                            113)
-                        </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(238, 130, 238); color:white">rgb(238, 130,
-                            238)
-                        </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(255, 165, 0); color:white">rgb(255, 165,
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 0, 0); color:white">rgb(255, 0,
                             0)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(106, 90, 205); color:white">rgb(106, 90,
+                        <td class="colorBoxExamples" style="background-color: rgb(0, 0, 255); color:white">rgb(0, 0,
+                            255)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(60, 179, 113); color:white">rgb(60,
+                            179,
+                            113)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(238, 130, 238); color:white">rgb(238,
+                            130,
+                            238)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 165, 0); color:white">rgb(255,
+                            165,
+                            0)
+                        </td>
+                        <td class="colorBoxExamples" style="background-color: rgb(106, 90, 205); color:white">rgb(106,
+                            90,
                             205)
                         </td>
                     </tr>
@@ -649,7 +664,8 @@
                 <table>
                     <tr>
                         <td class="colorBoxExamples"
-                            style="background-color: rgb(0, 0, 0); color: white">rgb(0, 0, 0)</td>
+                            style="background-color: rgb(0, 0, 0); color: white">rgb(0, 0, 0)
+                        </td>
                         <td class="colorBoxExamples" style="background-color: rgb(60, 60, 60); color: white">rgb(60, 60,
                             60)
                         </td>
@@ -659,10 +675,12 @@
                         <td class="colorBoxExamples" style="background-color: rgb(180, 180, 180); color: white">rgb(180,
                             180, 180)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(240, 240, 240); color: darkgray">rgb(240,
+                        <td class="colorBoxExamples" style="background-color: rgb(240, 240, 240); color: darkgray">
+                            rgb(240,
                             240, 240)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: rgb(255, 255, 255); color: darkgray">rgb(255,
+                        <td class="colorBoxExamples" style="background-color: rgb(255, 255, 255); color: darkgray">
+                            rgb(255,
                             255, 255)
                         </td>
                     </tr>
@@ -722,18 +740,23 @@
                     <tr>
                         <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</td>
                         <td class="colorBoxExamples"
-                            style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</td>
+                            style="background-color: hsl(240, 100%, 50%)">hsl(240, 100%, 50%)
+                        </td>
                         <td class="colorBoxExamples"
-                            style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</td>
+                            style="background-color: hsl(147, 50%, 47%)">hsl(147, 50%, 47%)
+                        </td>
                         <td class="colorBoxExamples"
-                            style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</td>
+                            style="background-color: hsl(300, 76%, 72%)">hsl(300, 76%, 72%)
+                        </td>
                         <td class="colorBoxExamples"
-                            style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</td>
+                            style="background-color: hsl(39, 100%, 50%)">hsl(39, 100%, 50%)
+                        </td>
                         <td class="colorBoxExamples"
-                            style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</td>
+                            style="background-color: hsl(248, 53%, 58%)">hsl(248, 53%, 58%)
+                        </td>
                     </tr>
                 </table>
-        </div>
+            </div>
         </article>
         <hr>
         <!----------------------------------------------------------------------------------------------------------------->
@@ -767,16 +790,19 @@
                 <h3>Example</h3>
                 <table>
                     <tr>
-                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 0%); color: white">hsl(0, 100%,
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 0%); color: white">hsl(0,
+                            100%,
                             0%)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 25%); color: white">hsl(0, 100%,
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 25%); color: white">hsl(0,
+                            100%,
                             25%)
                         </td>
                         <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</td>
                         <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 75%)">hsl(0, 100%, 75%)</td>
                         <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 90%)">hsl(0, 100%, 90%)</td>
-                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 100%)">hsl(0, 100%, 100%)</td>
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 100%, 100%)">hsl(0, 100%, 100%)
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -786,7 +812,8 @@
                 <h3>Example</h3>
                 <table>
                     <tr>
-                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 0%); color: white">hsl(0, 0%, 0%)
+                        <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 0%); color: white">hsl(0, 0%,
+                            0%)
                         </td>
                         <td class="colorBoxExamples" style="background-color: hsl(0, 0%, 24%); color: white">hsl(0, 0%,
                             24%)
@@ -827,7 +854,8 @@
                         <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 0.8); color: white">
                             rgba(255, 99, 71, 0.8)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 1); color: white">rgba(255,
+                        <td class="colorBoxExamples" style="background-color: rgba(255, 99, 71, 1); color: white">
+                            rgba(255,
                             99, 71, 1)
                         </td>
                     </tr>
@@ -853,16 +881,20 @@
                         <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.2); color: darkgray">
                             hsla(9, 100%, 64%, 0.2)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.4); color: white">hsla(9,
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.4); color: white">
+                            hsla(9,
                             100%, 64%, 0.4)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.6); color: white">hsla(9,
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.6); color: white">
+                            hsla(9,
                             100%, 64%, 0.6)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.8); color: white">hsla(9,
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 0.8); color: white">
+                            hsla(9,
                             100%, 64%, 0.8)
                         </td>
-                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 1); color: white">hsla(9,
+                        <td class="colorBoxExamples" style="background-color: hsla(9, 100%, 64%, 1); color: white">
+                            hsla(9,
                             100%, 64%, 1)
                         </td>
                     </tr>
@@ -874,7 +906,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssBackgrounds">
         <article>
-            <h3>CSS Backgrounds</h3>
+            <header>
+                <h3>CSS Backgrounds</h3>
+            </header>
             <p>The CSS background properties are used to define the background effects for elements.</p>
             <p>CSS background properties:</p>
             <ul>
@@ -898,9 +932,9 @@
                 <h3>Example</h3>
                 <code>body {
                     <br>
-                background-color: lightblue;
+                    background-color: lightblue;
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>With CSS, a color is most often specified by:</p>
@@ -915,21 +949,21 @@
                 <h3>Example</h3>
                 <code>h1 {
                     <br>
-                background-color: green;
+                    background-color: green;
                     <br>
-                }
+                    }
                     <br>
-                div {
+                    div {
                     <br>
-                background-color: lightblue;
+                    background-color: lightblue;
                     <br>
-                }
+                    }
                     <br>
-                p {
+                    p {
                     <br>
-                background-color: yellow;
+                    background-color: yellow;
                     <br>
-                }
+                    }
                 </code>
             </div>
         </article>
@@ -948,20 +982,21 @@
                 <code>
                     body {
                     <br>
-                background-image: url("paper.gif");
+                    background-image: url("paper.gif");
                     <br>
-                }
+                    }
                 </code>
             </div>
-            <p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is hardly readable:</p>
+            <p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is
+                hardly readable:</p>
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>
                     body {
                     <br>
-                background-image: url("bgdesert.jpg");
+                    background-image: url("bgdesert.jpg");
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p class="note">Note: When using a background image, use an image that does not disturb the text.</p>
@@ -980,9 +1015,9 @@
                 <code>
                     body {
                     <br>
-                background-image: url("gradient_bg.png");
+                    background-image: url("gradient_bg.png");
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look
@@ -992,47 +1027,53 @@
                 <code>
                     body {
                     <br>
-                background-image: url("gradient_bg.png");
+                    background-image: url("gradient_bg.png");
                     <br>
-                background-repeat: repeat-x;
+                    background-repeat: repeat-x;
                     <br>
-                }
+                    }
                 </code>
             </div>
-            <p class="note">Tip: To repeat an image vertically, set <mark>background-repeat: repeat-y;</mark></p>
+            <p class="note">Tip: To repeat an image vertically, set
+                <mark>background-repeat: repeat-y;</mark>
+            </p>
         </article>
         <hr>
         <!----------------------------------------------------------------------------------------------------------------->
         <article>
             <h3>Background Image - Set position and no-repeat</h3>
-            <p>Showing the background image only once is also specified by the <mark>background-repeat property:</mark></p>
+            <p>Showing the background image only once is also specified by the
+                <mark>background-repeat property:</mark>
+            </p>
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>
                     body {
                     <br>
-                background-image: url("img_tree.png");
+                    background-image: url("img_tree.png");
                     <br>
-                background-repeat: no-repeat;
+                    background-repeat: no-repeat;
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>In the example above, the background image is shown in the same place as the text. We want to change the
                 position of the image, so that it does not disturb the text too much.</p>
-            <p>The position of the image is specified by the <mark>background-position property:</mark></p>
+            <p>The position of the image is specified by the
+                <mark>background-position property:</mark>
+            </p>
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>
                     body {
                     <br>
-                background-image: url("img_tree.png");
+                    background-image: url("img_tree.png");
                     <br>
-                background-repeat: no-repeat;
+                    background-repeat: no-repeat;
                     <br>
-                background-position: right top;
+                    background-position: right top;
                     <br>
-                }
+                    }
                 </code>
             </div>
         </article>
@@ -1041,21 +1082,22 @@
         <article>
             <h3>Background Image - Fixed position</h3>
             <p>To specify that the background image should be fixed (will not scroll with the rest of the page), use the
-                <mark>background-attachment property:</mark></p>
+                <mark>background-attachment property:</mark>
+            </p>
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>
                     body {
                     <br>
-                background-image: url("img_tree.png");
+                    background-image: url("img_tree.png");
                     <br>
-                background-repeat: no-repeat;
+                    background-repeat: no-repeat;
                     <br>
-                background-position: right top;
+                    background-position: right top;
                     <br>
-                background-attachment: fixed;
+                    background-attachment: fixed;
                     <br>
-                }
+                    }
                 </code>
             </div>
         </article>
@@ -1065,15 +1107,17 @@
             <h3>Background - Shorthand property</h3>
             <p>To shorten the code, it is also possible to specify all the background properties in one single property.
                 This is called a shorthand property.</p>
-            <p>The shorthand property for background is <mark>background:</mark></p>
+            <p>The shorthand property for background is
+                <mark>background:</mark>
+            </p>
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>
                     body {
                     <br>
-                background: #ffffff url("img_tree.png") no-repeat right top;
+                    background: #ffffff url("img_tree.png") no-repeat right top;
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>When using the shorthand property the order of the property values is:</p>
@@ -1148,7 +1192,9 @@
     <!----------------------------------------------------------------------------------------------------------------->
     <section class="main-section" id="cssBorders">
         <article>
-            <h3>CSS Borders</h3>
+            <header>
+                <h3>CSS Borders</h3>
+            </header>
             <hr>
             <h3>CSS Border Properties</h3>
             <p>The CSS
@@ -1258,7 +1304,8 @@
                     <p style="border-style: dotted dashed solid double; padding: 3px">A mixed border.</p>
                 </span>
             </div>
-            <p class="note">Note: None of the OTHER CSS border properties described below will have ANY effect unless the
+            <p class="note">Note: None of the OTHER CSS border properties described below will have ANY effect unless
+                the
                 border-style property is set!</p>
         </article>
         <hr>
@@ -1280,18 +1327,18 @@
             <div class="codeExample">
                 <h3>Example</h3>
                 <code>p.one {<br>
-                border-style: solid;<br>
-                border-width: 5px;<br>
-                }<br>
+                    border-style: solid;<br>
+                    border-width: 5px;<br>
+                    }<br>
 
-                p.two {<br>
-                border-style: solid;<br>
-                border-width: medium;<br>
-                }<br>
+                    p.two {<br>
+                    border-style: solid;<br>
+                    border-width: medium;<br>
+                    }<br>
 
-                p.three {<br>
-                border-style: solid;<br>
-                border-width: 2px 10px 4px 20px;<br>
+                    p.three {<br>
+                    border-style: solid;<br>
+                    border-width: 2px 10px 4px 20px;<br>
                     }</code>
             </div>
         </article>
@@ -1325,25 +1372,25 @@
                 <code>
                     p.one {
                     <br>
-                border-style: solid;
+                    border-style: solid;
                     <br>
-                border-color: red;
+                    border-color: red;
                     <br>
-                }
-                <br>
-                p.two {
+                    }
                     <br>
-                border-style: solid;
+                    p.two {
                     <br>
-                border-color: green;
+                    border-style: solid;
                     <br>
-                }
-                <br>
-                p.three {
+                    border-color: green;
                     <br>
-                border-style: solid;
+                    }
                     <br>
-                border-color: red green blue yellow;
+                    p.three {
+                    <br>
+                    border-style: solid;
+                    <br>
+                    border-color: red green blue yellow;
                     <br>
                     }
                 </code>
@@ -1363,15 +1410,15 @@
                 <code>
                     p {
                     <br>
-                border-top-style: dotted;
+                    border-top-style: dotted;
                     <br>
-                border-right-style: solid;
+                    border-right-style: solid;
                     <br>
-                border-bottom-style: dotted;
+                    border-bottom-style: dotted;
                     <br>
-                border-left-style: solid;
+                    border-left-style: solid;
                     <br>
-                }
+                    }
                     <br>
                 </code>
             </div>
@@ -1381,9 +1428,9 @@
                 <code>
                     p {
                     <br>
-                border-style: dotted solid;
+                    border-style: dotted solid;
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>So, here is how it works:</p>
@@ -1462,9 +1509,9 @@
                 <code>
                     p {
                     <br>
-                border: 5px solid red;
+                    border: 5px solid red;
                     <br>
-                }
+                    }
                     <br>
                 </code>
                 <p>Result:</p>
@@ -1476,11 +1523,11 @@
                 <code>
                     p {
                     <br>
-                border-left: 6px solid red;
+                    border-left: 6px solid red;
                     <br>
-                background-color: lightgrey;
+                    background-color: lightgrey;
                     <br>
-                }
+                    }
                 </code>
                 <p>Result:</p>
                 <p style="border-left: 6px solid red; background-color: lightgray">Some text</p>
@@ -1491,11 +1538,11 @@
                 <code>
                     p {
                     <br>
-                border-bottom: 6px solid red;
+                    border-bottom: 6px solid red;
                     <br>
-                background-color: lightgrey;
+                    background-color: lightgrey;
                     <br>
-                }
+                    }
                 </code>
                 <p>Result:</p>
                 <p style="border-bottom: 6px solid red; background-color: lightgray">Some text</p>
@@ -1518,11 +1565,11 @@
                 <code>
                     p {
                     <br>
-                border: 2px solid red;
+                    border: 2px solid red;
                     <br>
-                border-radius: 5px;
+                    border-radius: 5px;
                     <br>
-                }
+                    }
                 </code>
             </div>
             <p>Note: The
@@ -1628,9 +1675,6 @@
     </section>
     <hr>
     <!----------------------------------------------------------------------------------------------------------------->
-    <section class="main-section">
-
-    </section>
 </main>
 <script>
     var body = document.rgbSlider,
