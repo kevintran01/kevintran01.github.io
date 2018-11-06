@@ -1,10 +1,13 @@
 body {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(lightslategrey, #343003);
     background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
 }
 #headImg {
     width: 22%;
@@ -24,6 +27,7 @@ body {
     z-index: 1;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    width: 100%;
 }
 .topnav a {
     position: -webkit-sticky; /* Safari */
@@ -121,6 +125,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#coreValues {
+    text-align: center;
+}
 .coreValuesBoxes {
     width: 140px;
     height: 140px;
@@ -135,9 +142,6 @@ body {
 #welcome-section {
     color: white;
 }
-#coreValues {
-    text-align: center;
-}
 #myPromise {
     font-size: 37px;
     margin: 20px 0 20px 20px;
@@ -145,10 +149,12 @@ body {
 /*********************************************************************************************************/
 @media only screen and (max-width: 375px) {
     h1#headerText {
-        font-size: 15px;
+        font-size: 25px;
+        top: 30%;
     }
     p#headerText1 {
-        font-size: 15px;
+        font-size: 25px;
+        top: 60%;
     }
     #quoteMark {
         position: relative;
@@ -156,6 +162,12 @@ body {
         top: -35px;
         right: 130px;
         opacity: 0.2;
+    }
+    .coreValuesBoxes {
+        width: 170px;
+        height: 140px;
+        font-size: 15px;
+        padding-right: 0;
     }
 }
 /*********************************************************************************************************/
@@ -181,7 +193,7 @@ body {
         width: 62.5%;
         top: 0px;
         margin-right: -270px;
-        border-color: red;
+        border: red;
     }
     #quoteMark {
         position: relative;
@@ -190,6 +202,13 @@ body {
         right: 130px;
         opacity: 0.2;
     }
+    /*.coreValuesBoxes {*/
+        /*width: 100%;*/
+        /*height: 100px;*/
+        /*font-size: 17px;*/
+        /*margin-left: 10px;*/
+        /*margin-right: 20px;*/
+    /*}*/
 }
 /*********************************************************************************************************/
 @media (max-width: 514px) {
@@ -250,10 +269,10 @@ body {
 /*********************************************************************************************************/
 @media (min-width: 600px) {
     h1#headerText {
-        font-size: 26px;
+        font-size: 58px;
     }
     p#headerText1 {
-        font-size: 26px;
+        font-size: 45px;
     }
     div#steveJobQuoteBox {
         margin-left: 20px;
