@@ -90,8 +90,7 @@ body {
     text-align: center;
     font-size: 3em;
     margin-top: 40px;
-    /*margin-left: 200px;*/
-    /*margin-right: 200px;*/
+    box-shadow: 2px 2px 7px 2px rgba(80, 80, 80, 0.98), 7px 8px 2px 1px #000000;
     padding-top: 10px;
     border-color: red;
     padding-bottom: 10px;
@@ -135,8 +134,8 @@ body {
 .coreValuesBoxes {
     width: 140px;
     height: 140px;
-    border: 5px solid #FFD700;
-    background-color: #e5d79c;
+    border: 5px solid #ffff00;
+    background-color: #fff8d6;
     text-align: center;
     display: inline-block;
     vertical-align: top;
@@ -159,6 +158,9 @@ body {
 }
 .footerNote {
     color: white;
+}
+.coreValuesContent {
+    transform: skew(2deg,0deg);
 }
 
 /*********************************************************************************************************/
