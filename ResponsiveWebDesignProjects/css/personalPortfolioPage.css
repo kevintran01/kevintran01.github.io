@@ -1,7 +1,10 @@
 body {
     margin: 0;
+    height: 100%;
+    background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(lightslategrey, #343003);
+    background-attachment: fixed;
 }
 #headImg {
     width: 22%;
@@ -84,6 +87,7 @@ body {
     /*margin-left: 200px;*/
     /*margin-right: 200px;*/
     padding-top: 10px;
+    border-color: red;
     padding-bottom: 10px;
     border-left: 15px solid yellow;
     background-color: #efece7;
@@ -102,13 +106,38 @@ body {
 
 #steveJobImg {
     /*position: absolute;*/
-    width: 30%;
+    width: 45%;
     height: auto;
     bottom: 0px;
+    padding-top: 0;
+    margin-top: 0;
     /*left: 550px;*/
     opacity: 0.3;
 }
-
+#steveJobQuote {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.coreValuesBoxes {
+    width: 170px;
+    height: 170px;
+    border:5px solid #FFD700;
+    background-color: #efece7;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+/*#welcome-section {*/
+    /*position: absolute;*/
+    /*top: 1500px;*/
+/*}*/
+#coreValues {
+    text-align: center;
+}
 /*********************************************************************************************************/
 
 @media only screen and (min-width: 375px) {
@@ -123,6 +152,11 @@ body {
         font-size: 17px;
     }
     p#headerText1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 500px) {
+    div#steveJobQuote {
         font-size: 20px;
     }
 }
@@ -158,6 +192,9 @@ body {
         margin-left: 10px;
         margin-right: 10px;
     }
+    div#steveJobQuote {
+        font-size: 20px;
+    }
 }
 @media (min-width: 600px) {
     h1#headerText {
@@ -170,6 +207,9 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+    div#steveJobQuote {
+        font-size: 25px;
+    }
 }
 @media (min-width: 800px) {
     h1#headerText {
@@ -181,6 +221,9 @@ body {
     div#steveJobQuoteBox {
         margin-left: 50px;
         margin-right: 50px;
+    }
+    div#steveJobQuote {
+        font-size: 40px;
     }
 }
 @media (min-width: 1000px) {
