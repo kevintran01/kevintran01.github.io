@@ -201,7 +201,7 @@ body {
         opacity: 0.2;
     }
     .coreValuesBoxes {
-        width: 370px;
+        width: 300px;
         height: 100px;
         font-size: 17px;
         margin-left: 10px;
@@ -260,7 +260,6 @@ body {
         position: absolute;
         width: 59%;
         top: 0px;
-        /*margin-right: -270px;*/
         border-color: red;
     }
 }
