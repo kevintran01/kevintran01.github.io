@@ -96,18 +96,17 @@ body {
 }
 
 #quoteMark {
-    /*position: absolute;*/
+    position: relative;
     top: -35px;
-    right: 730px;
+    right: 130px;
     opacity: 0.2;
-    -ms-transform: rotate(358deg);
-    -webkit-transform: rotate(358deg);
-    transform: rotate(358deg);
 }
 
 #steveJobImg {
-    /*position: absolute;*/
-    width: 45%;
+    position: absolute;
+    top: 35px;
+    right: 230px;
+    width: 35%;
     height: auto;
     bottom: 0px;
     padding-top: 0;
@@ -144,28 +143,56 @@ body {
     margin: 20px 0 20px 20px;
 }
 /*********************************************************************************************************/
+@media only screen and (max-width: 375px) {
+    h1#headerText {
+        font-size: 15px;
+    }
+    p#headerText1 {
+        font-size: 15px;
+    }
+    #quoteMark {
+        position: relative;
+        width: 30%;
+        top: -35px;
+        right: 130px;
+        opacity: 0.2;
+    }
+}
+/*********************************************************************************************************/
 
 @media only screen and (min-width: 375px) {
     h1#headerText {
-        font-size: 15px;
+        font-size: 38px;
+        top: 30%;
+    }
+    p#headerText1 {
+        font-size: 27px;
+        top: 60%;
     }
     div#steveJobQuoteBox {
         margin-left: 0px;
         margin-right: 0px;
     }
     div#steveJobQuote {
-        font-size: 17px;
+        font-size: 16px;
     }
-    p#headerText1 {
-        font-size: 15px;
+    #steveJobImg {
+        position: absolute;
+        width: 62.5%;
+        top: 0px;
+        margin-right: -270px;
+        border-color: red;
+    }
+    #quoteMark {
+        position: relative;
+        width: 30%;
+        top: -35px;
+        right: 130px;
+        opacity: 0.2;
     }
 }
-@media only screen and (min-width: 500px) {
-    div#steveJobQuote {
-        font-size: 20px;
-    }
-}
-@media (max-width: 600px) {
+/*********************************************************************************************************/
+@media (max-width: 514px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -198,9 +225,29 @@ body {
         margin-right: 10px;
     }
     div#steveJobQuote {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
+
+/*********************************************************************************************************/
+@media (min-width: 515px) {
+    h1#headerText {
+        font-size: 48px;
+        top: 30%;
+    }
+    p#headerText1 {
+        font-size: 37px;
+        top: 60%;
+    }
+    #steveJobImg {
+        position: absolute;
+        width: 59%;
+        top: 0px;
+        margin-right: -270px;
+        border-color: red;
+    }
+}
+/*********************************************************************************************************/
 @media (min-width: 600px) {
     h1#headerText {
         font-size: 26px;
@@ -216,6 +263,7 @@ body {
         font-size: 25px;
     }
 }
+/*********************************************************************************************************/
 @media (min-width: 800px) {
     h1#headerText {
         font-size: 40px;
@@ -231,6 +279,7 @@ body {
         font-size: 40px;
     }
 }
+/*********************************************************************************************************/
 @media (min-width: 1000px) {
     h1#headerText {
         font-size: 50px;
@@ -239,6 +288,7 @@ body {
         font-size: 44.5px;
     }
 }
+/*********************************************************************************************************/
 @media (min-width: 1200px) {
     h1#headerText {
         font-size: 60px;
@@ -247,6 +297,7 @@ body {
         font-size: 54.5px;
     }
 }
+/*********************************************************************************************************/
 @media (min-width: 1400px) {
     h1#headerText {
         font-size: 70px;
