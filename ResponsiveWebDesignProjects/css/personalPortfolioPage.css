@@ -125,16 +125,15 @@ body {
     width: 170px;
     height: 170px;
     border:5px solid #FFD700;
-    background-color: #efece7;
+    background-color: #e5d79c;
     text-align: center;
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
 }
-/*#welcome-section {*/
-    /*position: absolute;*/
-    /*top: 1500px;*/
-/*}*/
+#welcome-section {
+    color: white;
+}
 #coreValues {
     text-align: center;
 }
