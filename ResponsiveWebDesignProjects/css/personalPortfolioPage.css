@@ -160,6 +160,9 @@ body {
 #work {
     text-align: center;
 }
+.projectCards {
+    display: inline-block;
+}
 .card {
     display: inline-block;
     width: 200px;
