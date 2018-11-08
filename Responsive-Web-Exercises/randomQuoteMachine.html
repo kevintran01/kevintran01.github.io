@@ -112,10 +112,10 @@
         <hr>
     </header>
     <div id="quoteBox">
-        <span id="quote">"To Avoid Criticism, Say Nothing, Do Nothing, Be Nothing."</span>
+        <span id="quote"></span>
         <br>
         <br>
-        <span id="author">-Aristotle</span>
+        <span id="author"></span>
         <br>
         <button id="new-quote" type="button" class="btn btn-primary btn-lg">New Quote</button>
         <div id="social-box">
@@ -131,6 +131,10 @@
 <!--******************************************************************************************************************-->
 <script>
     $(document).ready(function () {
+        let randomQuote;
+        let randomNum;
+        let randomAuthor;
+        getQuote();
         function getQuote() {
 
             let quotes = ["\"You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.\"",
@@ -256,21 +260,21 @@
                 "-Helen Keller", "-Robern Frost", "-T. S. Eliot", "-Abraham Lincoln", "-Ray Bradbury", "-Steve Jobs", "-Mark Twain", "-John Muir", "-Oprah Winfrey", "-Voltaire",
                 "-Charles Dickens", "-Nicholas Sparks",];
 
-            let randomNum = Math.floor((Math.random() * quotes.length));
-            let randomQuote = quotes[randomNum];
-            let randomAuthor = authors[randomNum];
+            randomNum = Math.floor((Math.random() * quotes.length));
+            randomQuote = quotes[randomNum];
+            randomAuthor = authors[randomNum];
 
             $("#quote").text(randomQuote);
             $("#author").text(randomAuthor);
         }
 
+        $("#shareTweet").on("click", function () {
+            window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " " + randomAuthor + encodeURIComponent("  #automatedTweet #KevinsQuoteMachine"));
+        });
+
         $('#new-quote').on("click", function () {
             getQuote();
         });
-
-        $("#shareTweet").on("click", function () {
-            window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent("Checkout Kevin's Quote Generator!"));
-        })
     });
 </script>
 <!--******************************************************************************************************************-->
