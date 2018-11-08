@@ -11,6 +11,9 @@
     <title>Random Quote Machine</title>
     <!--******************************************************************************************************************-->
     <style>
+        body {
+            background-color: #4c4c4c;
+        }
         #header {
             text-align: center;
             padding-top: 15px;
@@ -18,10 +21,13 @@
 
         #headerText {
             font-size: 70px;
+            color: #efefef;
         }
 
         #headerText1 {
             font-size: 20px;
+            color: #efefef;
+            font-family: 'Raleway', san-serif;
         }
 
         #quoteBox {
@@ -32,7 +38,7 @@
             border: 10px solid gold;
             font-size: 25px;
             text-align: center;
-            /*padding-bottom: 200px;*/
+            background-color: #e7f3f0;
             /*display: block;*/
             position: relative;
             font-family: 'Source Sans Pro', sans-serif;
@@ -55,6 +61,27 @@
             left: 30px;
             bottom: 17px;
         }
+        @media (max-width: 400px) {
+            #quoteBox {
+                margin: 0px;
+                padding: 50px 0 100px 0;
+            }
+        }
+        @media (min-width: 401px) {
+            #quoteBox {
+                margin: 0px;
+            }
+        }
+        @media (min-width: 600px) {
+            #quoteBox {
+                margin: 0px;
+            }
+        }
+        @media (min-width: 800px) {
+            #quoteBox {
+                margin: 100px 200px 200px 200px;;
+            }
+        }
     </style>
 </head>
 <!--******************************************************************************************************************-->
@@ -63,9 +90,10 @@
     <header id="header">
         <h1 id="headerText">Quote Generator</h1>
         <h1 id="headerText1">100+ Quotes for Passion And Motivation!</h1>
+        <hr>
     </header>
     <div id="quoteBox">
-        <span id="quote"><strong>To Avoid Criticism, Say Nothing, Do Nothing, Be Nothing</strong></span>
+        <span id="quote">"To Avoid Criticism, Say Nothing, Do Nothing, Be Nothing"</span>
         <br>
         <br>
         <span id="author">-Aristotle</span>
