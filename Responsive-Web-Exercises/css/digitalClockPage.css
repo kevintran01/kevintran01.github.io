@@ -36,50 +36,50 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 /*-------------------------------------------------------------------------------------------------------*/
-@media (max-width: 400px) {
-    .main {
-        width: 80%;
-        height: 40%;
-    }
-    .topBadge {
-        left: 70px;
-        width: 200px;
-        top: -140px;
-        font-size: 50px;
-    }
-    #clock {
-        font-size: 50px;
-    }
-}
-/*-------------------------------------------------------------------------------------------------------*/
-@media (min-width: 401px) {
-    .main {
-        width: 80%;
-        height: 40%;
-    }
-    .topBadge {
-        left: 70px;
-        width: 200px;
-        top: -140px;
-        font-size: 50px;
-    }
-    #clock {
-        font-size: 50px;
-    }
-}
-/*-------------------------------------------------------------------------------------------------------*/
-@media (min-width: 800px) {
-    .main {
-        width: 800px;
-        height: 220px;
-    }
-    .topBadge {
-        width: 270px;
-        font-size: 50px;
-        top: -30px;
-        left: 30%;
-    }
-    #clock {
-        font-size: 100px;
-    }
-}
+/*@media (max-width: 400px) {*/
+    /*.main {*/
+        /*width: 80%;*/
+        /*height: 40%;*/
+    /*}*/
+    /*.topBadge {*/
+        /*left: 70px;*/
+        /*width: 200px;*/
+        /*top: -140px;*/
+        /*font-size: 50px;*/
+    /*}*/
+    /*#clock {*/
+        /*font-size: 50px;*/
+    /*}*/
+/*}*/
+/*!*-------------------------------------------------------------------------------------------------------*!*/
+/*@media (min-width: 401px) {*/
+    /*.main {*/
+        /*width: 80%;*/
+        /*height: 40%;*/
+    /*}*/
+    /*.topBadge {*/
+        /*left: 70px;*/
+        /*width: 200px;*/
+        /*top: -140px;*/
+        /*font-size: 50px;*/
+    /*}*/
+    /*#clock {*/
+        /*font-size: 50px;*/
+    /*}*/
+/*}*/
+/*!*-------------------------------------------------------------------------------------------------------*!*/
+/*@media (min-width: 800px) {*/
+    /*.main {*/
+        /*width: 800px;*/
+        /*height: 220px;*/
+    /*}*/
+    /*.topBadge {*/
+        /*width: 270px;*/
+        /*font-size: 50px;*/
+        /*top: -30px;*/
+        /*left: 30%;*/
+    /*}*/
+    /*#clock {*/
+        /*font-size: 100px;*/
+    /*}*/
+/*}*/
