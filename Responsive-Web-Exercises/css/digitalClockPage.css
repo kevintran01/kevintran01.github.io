@@ -1,14 +1,16 @@
 body {
-    background-image: url("pattern.png");
+    background-image: url("../images/pattern.png");
 }
 
 .main {
-    background-color: #cccccc;
-    width: 700px;
+    background-color: #ababab;
+    width: 800px;
     height: 220px;
     margin: 170px auto;
     position: relative;
     padding: 30px;
+    border: 5px solid greenyellow;
+    border-radius: 30px;
 }
 .topBadge {
     text-align: center;
@@ -26,9 +28,58 @@ body {
 }
 #clock {
     background-color: white;
+    border-radius: 10px;
     text-align: center;
-    font-size: 110px;
+    font-size: 100px;
     height: 74%;
     padding-top: 58px;
     font-family: 'Orbitron', sans-serif;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+@media (max-width: 400px) {
+    .main {
+        width: 80%;
+        height: 40%;
+    }
+    .topBadge {
+        left: 70px;
+        width: 200px;
+        top: -140px;
+        font-size: 50px;
+    }
+    #clock {
+        font-size: 50px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------*/
+@media (min-width: 401px) {
+    .main {
+        width: 80%;
+        height: 40%;
+    }
+    .topBadge {
+        left: 70px;
+        width: 200px;
+        top: -140px;
+        font-size: 50px;
+    }
+    #clock {
+        font-size: 50px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------*/
+@media (min-width: 800px) {
+    .main {
+        width: 800px;
+        height: 220px;
+    }
+    .topBadge {
+        width: 270px;
+        font-size: 50px;
+        top: -30px;
+        left: 30%;
+    }
+    #clock {
+        font-size: 100px;
+    }
 }
