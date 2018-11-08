@@ -1,0 +1,34 @@
+body {
+    background-image: url("pattern.png");
+}
+
+.main {
+    background-color: #cccccc;
+    width: 700px;
+    height: 220px;
+    margin: 170px auto;
+    position: relative;
+    padding: 30px;
+}
+.topBadge {
+    text-align: center;
+    width: 270px;
+    background-color: #b4a60b;
+    border-radius: 10px;
+    border: 4px solid #a10c5e;
+    color: #ffffff;
+    padding: 0 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: -30px;
+    left: 30%;
+}
+#clock {
+    background-color: white;
+    text-align: center;
+    font-size: 110px;
+    height: 74%;
+    padding-top: 58px;
+    font-family: 'Orbitron', sans-serif;
+}
