@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(200deg, #006dcf, #afc5e2, #3a8cdc, darkblue);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#timerControls {
+    width: 100%;
+}
