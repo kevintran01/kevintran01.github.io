@@ -2,16 +2,6 @@ body {
     background-image: url("../images/pattern.png");
 }
 
-.main {
-    background-color: #ababab;
-    width: 800px;
-    height: 220px;
-    margin: 170px auto;
-    position: relative;
-    padding: 30px;
-    border: 5px solid greenyellow;
-    border-radius: 30px;
-}
 .topBadge {
     text-align: center;
     width: 270px;
@@ -26,6 +16,16 @@ body {
     top: -30px;
     left: 30%;
 }
+.main {
+    background-color: #ababab;
+    width: 800px;
+    height: 320px;
+    margin: 170px auto;
+    position: relative;
+    padding: 30px;
+    border: 5px solid greenyellow;
+    border-radius: 30px;
+}
 #clock {
     background-color: white;
     border-radius: 10px;
@@ -37,48 +37,67 @@ body {
 }
 /*-------------------------------------------------------------------------------------------------------*/
 @media (max-width: 400px) {
-    .main {
-        width: 80%;
-        height: 70%;
-    }
     .topBadge {
-        left: 70px;
         width: 200px;
-        top: -140px;
-        font-size: 50px;
+        left: 100px;
+        font-size: 34px;
+    }
+    .main {
+        width: 100%;
+        height: 240px;
     }
     #clock {
-        font-size: 50px;
+        font-size: 38px;
+        height: 170px;
     }
 }
 /*-------------------------------------------------------------------------------------------------------*/
 @media (min-width: 401px) {
-    .main {
-        width: 80%;
-    }
     .topBadge {
-        left: 70px;
         width: 200px;
-        top: -140px;
-        font-size: 50px;
+        left: 100px;
+        font-size: 34px;
+    }
+    .main {
+        width: 100%;
+        height: 240px;
     }
     #clock {
         font-size: 50px;
+        height: 170px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------*/
+@media (min-width: 600px) {
+    .topBadge {
+        width: 270px;
+        font-size: 47px;
+        top: -30px;
+        left: 23%;
+    }
+    .main {
+        width: 85%;
+        height: 260px;
+    }
+    #clock {
+        font-size: 60px;
+        height: 190px;
     }
 }
 /*-------------------------------------------------------------------------------------------------------*/
 @media (min-width: 800px) {
-    .main {
-        width: 800px;
-        height: 220px;
-    }
     .topBadge {
-        width: 270px;
-        font-size: 50px;
-        top: -30px;
-        left: 30%;
+        width: 340px;
+        font-size: 60px;
+        top: -50px;
+        left: 22%;
+    }
+    .main {
+        width: 80%;
+        height: 300px;
     }
     #clock {
         font-size: 100px;
+        height: 220px;
     }
 }
