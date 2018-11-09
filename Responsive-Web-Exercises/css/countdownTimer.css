@@ -4,8 +4,30 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
-
-#timerControls {
-    width: 100%;
+.timerButton {
+    font-size: 25px;
+    padding: 20px;
+    position:relative;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(127, 127, 127, 0.4);
+    color: white;
+    border-color: #616161;
+    border-bottom:5px solid #4a4a4a;
+}
+#timer {
+    text-align: center;
+}
+.display {
+    padding: 70px 0 200px 0;
+    font-size: 70px;
+}
+.displayTimeLeft {
+    font-size: 190px;
+}
+#enterMin {
+    font-size: 20px;
+    padding: 25px;
 }

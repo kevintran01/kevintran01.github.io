@@ -4,24 +4,25 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,600i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/countdownTimer.css">
     <title>Countdown Timer</title>
 </head>
 <body>
 <section>
     <div id="timer">
-        <div id="timerControls">
-            <button class="timerButton">1 Min</button>
-            <button class="timerButton">5 Min</button>
-            <button class="timerButton">10 Min</button>
-            <button class="timerButton">20 Min</button>
+        <div class="row" id="timerControls">
+            <button class="col timerButton" data-time="150">2.5 MIN</button>
+            <button class="col timerButton" data-time="300">5 WATER</button>
+            <button class="col timerButton" data-time="900">QUICK 15</button>
+            <button class="col timerButton" data-time="1800">LUNCH BREAK</button>
             <form id="custom" name="customForm">
-                <input type="text" name="minutes" placeholder="Enter minutes">
+                <input class="col enterMin" type="text" id="enterMin" name="minutes" placeholder="Enter minutes">
             </form>
         </div>
         <div class="display">
-            <h1 class="displayTimeLeft"></h1>
-            <p class="displayEndTime"></p>
+            <p class="displayTimeLeft">00:00</p>
+            <p class="displayEndTime">Be Back @</p>
         </div>
     </div>
 </section>
