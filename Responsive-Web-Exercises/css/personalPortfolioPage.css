@@ -306,6 +306,7 @@ div.active {
         transform: rotate(180deg);
         float: right;
         margin-top: -120px;
+    }
 }
 
 /*********************************************************************************************************/
@@ -518,12 +519,14 @@ div.active {
         font-size: 50px;
         top: 55%;
     }
+
     #steveJobImg {
         position: absolute;
         width: 52%;
         top: 0px;
         margin-right: -250px;
     }
+
     .coreValuesBoxes {
         width: 150px;
         height: 250px;
