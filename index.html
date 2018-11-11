@@ -43,37 +43,41 @@
         <hr>
         <div id="myPromise"><i><u>My Core Values:</u></i></div>
         <div id="coreValues">
-            <div class="coreValuesBoxes">
-                <strong><u>Costumer Commitment</u>
+            <img src="Responsive-Web-Exercises/images/arrowNext.png" class="prev" alt="prev">
+            <div class="sliderInner">
+                <div class="coreValuesBoxes active">
+                    <strong><u>Costumer Commitment</u>
+                        <hr>
+                    </strong>I develop relationships that make a positive difference in my customers'
+                    lives.
+                </div>
+                <div class="coreValuesBoxes"><strong><br><u>Quality</u>
                     <hr>
-                </strong>I develop relationships that make a positive difference in my customers'
-                lives.
-            </div>
-            <div class="coreValuesBoxes"><strong><br><u>Quality</u>
-                <hr>
-            </strong>I provide outstanding products and deliver premium value to my
-                customers.
-            </div>
-            <div class="coreValuesBoxes"><strong><br><u>Integrity</u>
-                <hr>
-            </strong>I uphold the highest standards of integrity in all of my actions.
-            </div>
-            <div class="coreValuesBoxes"><strong><br><u>Teamwork</u>
-                <hr>
-            </strong>I collaborate to meet the needs of our customers and contribute to the
-                company's vision.
-            </div>
-            <div class="coreValuesBoxes"><strong><br><u>Good Citizenship</u>
-                <hr>
-            </strong>My mission is to provide, give empathy and never lose sight of societies values.
-            </div>
-            <div class="coreValuesBoxes"><strong><br><u>A Will To Win</u>
-                <hr>
-            </strong>I exhibit a strong will to win in the marketplace and in every aspect of the business.
-            </div>
-            <div class="coreValuesBoxes"><strong><u>Personal Accountability</u>
-                <hr>
-            </strong>I take personal accountability for delievering to my commitments.
+                </strong>I provide outstanding products and deliver premium value to my
+                    customers.
+                </div>
+                <div class="coreValuesBoxes"><strong><br><u>Integrity</u>
+                    <hr>
+                </strong>I uphold the highest standards of integrity in all of my actions.
+                </div>
+                <div class="coreValuesBoxes"><strong><br><u>Teamwork</u>
+                    <hr>
+                </strong>I collaborate to meet the needs of our customers and contribute to the
+                    company's vision.
+                </div>
+                <div class="coreValuesBoxes"><strong><br><u>Good Citizenship</u>
+                    <hr>
+                </strong>My mission is to provide, give empathy and never lose sight of societies values.
+                </div>
+                <div class="coreValuesBoxes"><strong><br><u>A Will To Win</u>
+                    <hr>
+                </strong>I exhibit a strong will to win in the marketplace and in every aspect of the business.
+                </div>
+                <div class="coreValuesBoxes"><strong><u>Personal Accountability</u>
+                    <hr>
+                </strong>I take personal accountability for delievering to my commitments.
+                </div>
+                <img src="Responsive-Web-Exercises/images/arrowNext.png" class="next" alt="next">
             </div>
         </div>
     </article>
@@ -194,7 +198,7 @@
             <div class="card">
                 <a href="#">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/weatherMapAPI.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Weather Map Project</p>
                     </div>
@@ -203,7 +207,7 @@
             <div class="card">
                 <a href="#">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/movieApplication.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Movie Application</p>
                     </div>
@@ -212,7 +216,7 @@
             <div class="card">
                 <a href="#">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/coffeeOrder.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Coffee Order</p>
                     </div>
@@ -221,7 +225,7 @@
             <div class="card">
                 <a href="#">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/googleMapsAPI.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Google Maps Api</p>
                     </div>
@@ -230,7 +234,7 @@
             <div class="card">
                 <a href="Responsive-Web-Exercises/randomQuoteMachine.html" target="_blank">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/quoteGenerator.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Random Quote Generator</p>
                     </div>
@@ -239,7 +243,7 @@
             <div class="card">
                 <a href="Responsive-Web-Exercises/digitalClockPage.html" target="_blank">
                     <img class="card-img-top" src="Responsive-Web-Exercises/images/digitalClockPage.png"
-                    alt="Card image cap">
+                         alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text" style="color: black">Digital Clock Page</p>
                     </div>
@@ -290,7 +294,6 @@
         </div>
     </article>
 </section>
-<br><br><br>
 <hr>
 <!--------------------------------------------------------------------------------------------------------->
 <br><br><br>
@@ -302,7 +305,31 @@
 <!--******************************************************************************************************************-->
 <!--******************************************************************************************************************-->
 <!--******************************************************************************************************************-->
-<script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.next').on('click', function () {
+            var currentImg = $('div.active');
+            var nextImg = currentImg.next();
+
+            if (nextImg.length) {
+                currentImg.removeClass('active').css('z-index', -10);
+                nextImg.addClass('active').css('z-index', 10);
+            }
+        });
+        $('.prev').on('click', function () {
+            var currentImg = $('div.active');
+            var prevImg = currentImg.prev();
+
+            if (prevImg.length) {
+                currentImg.removeClass('active').css('z-index', -10);
+                prevImg.addClass('active').css('z-index', 10);
+            }
+        });
+    });
+
     function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
