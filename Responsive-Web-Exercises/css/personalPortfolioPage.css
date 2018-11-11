@@ -134,7 +134,7 @@ a.active {
     overflow: hidden;
 }
 .prev, .next {
-    width: 30px;
+    width: 40px;
 /*    margin-top: 110px;*/
     cursor: pointer;
 }
@@ -161,7 +161,7 @@ a.active {
     border: 5px solid #b4a60b;
     background-color: #fff8d6;
     text-align: center;
-    display: inline-block;
+    /*display: inline-block;*/
     display: none;
     vertical-align: top;
     margin-top: 10px;
@@ -247,7 +247,6 @@ div.active {
         width: 170px;
         height: 130px;
         font-size: 15px;
-        padding-right: 0;
     }
 }
 
@@ -381,6 +380,19 @@ div.active {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .prev {
+        float: left;
+        margin-top: 110px;
+    }
+    .next {
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari 3-8 */
+        transform: rotate(180deg);
+        float: right;
+        margin-top: -140px;
+    }
+
 }
 
 /*********************************************************************************************************/
@@ -421,6 +433,10 @@ div.active {
         font-size: 22px;
         margin-left: 10px;
         margin-right: 10px;
+        display: inline-block;
+    }
+    .prev, .next {
+        display: none;
     }
 }
 
@@ -474,6 +490,10 @@ div.active {
         margin-right: 7px;
         margin-top: 20px;
         padding: 8px 8px 5px 8px;
+        display: inline-block;
+    }
+    .prev, .next {
+        display: none;
     }
 }
 
