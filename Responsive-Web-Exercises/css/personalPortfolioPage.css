@@ -48,7 +48,7 @@ body {
     background-color: #111;
 }
 
-.active {
+a.active {
     background-color: #8a8009;
 
 }
@@ -131,20 +131,23 @@ body {
     transform: translate(-50%, -50%);
 }
 .sliderInner {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .prev, .next {
     width: 30px;
-    margin-top: 130px;
+/*    margin-top: 110px;*/
     cursor: pointer;
 }
 .prev {
     float: left;
+    margin-top: 100px;
 }
 .next {
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Safari 3-8 */
     transform: rotate(180deg);
+    float: right;
+    margin-top: -100px;
 }
 #coreValues {
     text-align: center;
@@ -158,7 +161,7 @@ body {
     border: 5px solid #b4a60b;
     background-color: #fff8d6;
     text-align: center;
-    /*display: inline-block;*/
+    display: inline-block;
     display: none;
     vertical-align: top;
     margin-top: 10px;
@@ -166,7 +169,7 @@ body {
     box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 #000000;
     transform: skew(-4deg,0deg);
 }
-.active {
+div.active {
     display: inline-block;
 }
 
@@ -288,7 +291,7 @@ body {
     }
 
     .coreValuesBoxes {
-        width: 320px;
+        width: 300px;
         height: 190px;
         font-size: 20px;
         margin-left: 10px;
