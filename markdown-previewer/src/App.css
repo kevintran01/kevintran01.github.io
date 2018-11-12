@@ -1,6 +1,34 @@
 .inputText {
-  background-color: #3a8cdc;
+   background-color: #3a8cdc;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+}
+#editor {
+    padding-bottom: 100px;
 }
 .outputText {
-  background-color: #3a8cdc;
+    background-color: #3a8cdc;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+#preview {
+    border: 2px solid gray;
+    padding-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+body {
+    background-color: #ababab;
+}
+h1 {
+    text-align: center;
 }

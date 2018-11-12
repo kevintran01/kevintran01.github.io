@@ -2,7 +2,7 @@
   "name": "hello",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kevintran01.github.io/hello",
+  "homepage": "https://kevintran01.github.io/markdown-previewer",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "marked": "^0.5.1",

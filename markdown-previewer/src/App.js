@@ -20,19 +20,20 @@ class App extends Component {
         let {markdown} = this.state;
         console.log(markdown);
         return (
-            <div className="App container">
+            <div cName="App container">
+                <br/>
+                <h1><u>Welcome to my React Markdown Previewer!</u></h1>
                 <div className="inputText">
                     <FormGroup controlId="formControlsTextarea">
-                        <ControlLabel>Markdown Input</ControlLabel>
-                        <FormControl componentClass="textarea" placeholder="Enter Markdown"
-                                     value={markdown}
+                        <ControlLabel><h2>Editor</h2></ControlLabel>
+                        <FormControl componentClass="textarea" id="editor" placeholder="Enter Markdown Text (HTML & ReactJS text)" value={markdown}
                                      onChange={(event) => this.updateMarkdown(event.target.value)}></FormControl>
                     </FormGroup>
                 </div>
                 <div className="outputText">
-                    <h1>Markdown Output</h1>
+                    <h2>Previewer</h2>
                 </div>
-                <div>
+                <div id="preview">
                     <div dangerouslySetInnerHTML={{__html: marked(markdown)}}></div>
                 </div>
             </div>
