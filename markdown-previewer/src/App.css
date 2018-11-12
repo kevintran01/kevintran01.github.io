@@ -1,33 +1,36 @@
 .inputText {
-   background-color: #3a8cdc;
+   background-color: #41a3a2;
     margin-top: 70px;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 10px;
+    border: 1px solid black;
     /*border-top-right-radius: 10px;*/
 }
 #editor {
     padding-bottom: 100px;
+    background-color: #bfd8d8;
 }
 .outputText {
-    background-color: #3a8cdc;
+    background-color: #41a3a2;
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
     padding-bottom: 5px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 #preview {
     border: 2px solid gray;
     padding-bottom: 100px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: white;
+    background-color: #bfd8d8;
     border-radius: 10px;
 
 }
 body {
-    background-color: #ababab;
+    background-color: #84b5b5;
 }
 h1 {
     text-align: center;

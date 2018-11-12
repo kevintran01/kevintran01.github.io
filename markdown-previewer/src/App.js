@@ -26,7 +26,7 @@ class App extends Component {
                 <div className="inputText">
                     <FormGroup controlId="formControlsTextarea">
                         <ControlLabel><h2>Editor</h2></ControlLabel>
-                        <FormControl componentClass="textarea" id="editor" placeholder="Enter Markdown Text (HTML & ReactJS text)" value={markdown}
+                        <FormControl componentClass="textarea" id="editor" placeholder="Enter Markdown Text (HTML & ReactJS text) ex: <h1>Hello World</h1>" value={markdown}
                                      onChange={(event) => this.updateMarkdown(event.target.value)}></FormControl>
                     </FormGroup>
                 </div>
