@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Responsive-Web-Exercises/css/pomodoroClock.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+<div>
+    <audio id="buzzer" src="../Responsive-Web-Exercises/sounds/drumFill.mp3" type="audio/mpeg"></audio>
+    <audio id="buzzer1" src="../Responsive-Web-Exercises/sounds/pomodoroClock.mp3" type="audio/mpeg"></audio>
+    <h1>Pomodoro Clock</h1>
+    <h2>Designed and Coded by</h2>
+    <h2>Kevin Tran</h2>
+    <hr>
+    <div id="timeDiv">
+        <h1 id="title">Session Length</h1>
+        <a href="#" class="btn btn-outline-primary" id="minus5Session">-</a>
+        <h2 id="timeType"></h2>
+        <h2 id="num">5</h2>
+        <a href="#" class="btn btn-outline-primary" id="add5Session">+</a>
+        <a href="#" class="btn btn-outline-primary" id="reset">Reset</a>
+    </div>
+    <div id="breakDiv">
+        <h1 id="title1">Break Length</h1>
+        <a href="#" class="btn btn-outline-primary" id="minus5Break">-</a>
+        <h2 id="breakNum">5</h2>
+        <a href="#" class="btn btn-outline-primary" id="add5Break">+</a>
+    </div>
+    <a href="#" class="btn btn-outline-primary" id="start">Start</a>
+</div>
+</body>
+<script type="text/javascript" src="../js/pomodoroClock.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</html>

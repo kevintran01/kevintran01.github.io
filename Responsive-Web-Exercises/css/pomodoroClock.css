@@ -1,0 +1,22 @@
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #a98018;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    display: inline;
+}
+#start {
+    margin: 10px;
+}
+#num, #breakNum {
+    font-size: 50px;
+    padding: 50px;
+}
