@@ -7,10 +7,18 @@ body {
 h1 {
     font-size: 50px;
     position: relative;
+    top: 0px;
 }
 #author {
     font-size: 30px;
     position: absolute;
     top: 85px;
     width: 100%;
+}
+.bar {
+    margin: 0 2px 0 0;
+    width: 9px;
+    height: 100px;
+    display: inline-block;
+    background-color: gold;
 }
