@@ -216,6 +216,10 @@ div.active {
     top: 50%;
     transform: translateY(-50%);
 }
+.contactText a {
+    color: #8a8009;
+}
+
 #footer {
     background-color: black;
 }
