@@ -1,0 +1,64 @@
+header {
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    background-color: #00724f;
+    color: gold;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+body {
+    text-align: center;
+    background-color: #dddddc;
+}
+.horse {
+    width: 85px;
+    display: block;
+    position: relative;
+}
+
+#racetrack {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url("../images/tanDirtGround.jpg");
+    border-right: dashed 10px white;
+    box-sizing: border-box;
+}
+
+#raceInfoContainer {
+    font-family: 'Quattrocento', serif;
+    width: 80%;
+    margin: 40px auto 0;
+    background: #00724f;
+    height: 150px;
+}
+
+#raceInfoContainer h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+.raceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 20%;
+    float: left;
+    color: gold;
+}
+.raceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+input[type="button"] {
+    background-color: darkgoldenrod;
+    font-family: 'Quattrocento', serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 8px 25px 8px 0;
+    border: 1px solid black;
+}
