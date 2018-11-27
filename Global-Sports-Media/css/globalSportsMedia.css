@@ -1,0 +1,47 @@
+body {
+    background-color: #c1c1c1;
+}
+
+header h1 {
+    float: left;
+    font-size: 3em;
+    color: #000;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+div.jumbotron {
+    background-image: url("../images/hockey.jpg");
+    opacity: 0.8;
+    height: 400px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+.display-4 {
+    padding-top: 20px;
+}
+.lead {
+    font-size: 30px;
+}
+
+footer {
+    background-color: black;
+    height: 200px;
+    padding-top: 20px;
+    color: white;
+}
+
+nav.navbar {
+    background-color: #d7bcef;
+}
+.card {
+    display: inline-block;
+    float: left;
+}
+.card img {
+    width: 200px;
+}
+
+div.jumbotron.share1 {
+    background-image: url("../images/shareCollage.jpg");
+}
